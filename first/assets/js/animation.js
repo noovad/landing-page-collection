@@ -1,17 +1,18 @@
 const header = document.getElementById("header");
 const heroButton = document.getElementById("heroButton");
+const headerNav = document.getElementById("headerNav");
 const sections = document.querySelectorAll("section");
 
 function showButton() {
-  heroButton.classList.remove("w-0", "px-0", "opacity-0", "pointer-events-none");
-
-  heroButton.classList.add("w-24", "px-4", "opacity-100");
+  heroButton.classList.remove("translate-x-120", "opacity-100");
+  heroButton.classList.add("opacity-100");
+  headerNav.classList.add("-translate-x-12");
 }
 
 function hideButton() {
-  heroButton.classList.remove("w-24", "px-4", "opacity-100");
-
-  heroButton.classList.add("w-0", "px-0", "opacity-0", "pointer-events-none");
+  heroButton.classList.add("translate-x-120", "opacity-0");
+  heroButton.classList.remove("opacity-100");
+  headerNav.classList.remove("-translate-x-12");
 }
 
 function updateHeader() {
@@ -24,9 +25,9 @@ function updateHeader() {
       header.classList.add(`header-${section.dataset.header}`);
 
       if (section.dataset.hero === "true") {
-        showButton();
-      } else {
         hideButton();
+      } else {
+        showButton();
       }
     }
   });

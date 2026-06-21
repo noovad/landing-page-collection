@@ -1,157 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page Demo</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+
+  <body>
     <!-- Header -->
     <header id="header" class="header header-dark">
-        <div class="font-bold text-2xl">
-            Rhetorich
+      <div class="w-full mx-auto max-w-7xl flex justify-between items-center">
+        <h5 class="font-bold text-lg">Rhetorich</h5>
+        <div class="flex">
+          <nav
+            id="headerNav"
+            class="flex items-center gap-12 text-sm font-medium transition-all duration-300 ease-in-out"
+          >
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQ</a>
+          </nav>
+          <button
+            id="heroButton"
+            class="btn-secondary transition-all duration-300 ease-in-out translate-x-120 opacity-0"
+          >
+            Book a demo
+          </button>
         </div>
-        <div class="flex items-center gap-8">
-            <nav class="flex items-center gap-6">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Contact</a>
-            </nav>
-            <button id="heroButton" class="
-                    overflow-hidden
-                    whitespace-nowrap
-                    w-24
-                    px-4
-                    py-2
-                    rounded-lg
-                    bg-blue-500
-                    text-white
-                    opacity-100
-                    transition-all
-                    duration-300
-                    ease-in-out
-                ">
-                Started
-            </button>
-        </div>
+      </div>
     </header>
     <!-- Hero -->
-    <section data-header="dark" data-hero="true" class="min-h-screen bg-primary flex items-center">
-        <div class="max-w-6xl mx-auto px-8">
-            <h1 class="animate-on-scroll slide-up text-7xl font-bold mb-6">
-                Build Modern Landing Pages
-            </h1>
-            <p class="animate-on-scroll fade-in text-xl text-gray-600 max-w-2xl mb-8">
-                Create fast, responsive and conversion-focused landing pages
-                using Tailwind CSS and reusable animations.
-            </p>
-            <div class="animate-on-scroll zoom-in flex gap-4">
-                <button class="px-6 py-3 bg-black text-white rounded-lg">
-                    Get Started
-                </button>
-                <button class="px-6 py-3 border rounded-lg">
-                    Learn More
-                </button>
-            </div>
+    <section data-header="dark" data-hero="true" class="h-[90vh] text-white bg-primary">
+      <div
+        class="max-w-7xl h-full mx-auto px-8 flex flex-col items-center pt-44 bg-[url('./assets/image/hero.png')] bg-contain bg-bottom bg-no-repeat"
+      >
+        <h1 class="animate-on-scroll slide-up text-7xl mb-6 leading-none tracking-tight">Speak like you’re worth it</h1>
+        <h5 class="animate-on-scroll fade-in text-lg mb-8 text-center max-w-2xl">
+          A human+AI coaching platform helping lawyers become more impactful communicators — in client meetings,
+          courtrooms, negotiations, and beyond.
+        </h5>
+        <div class="animate-on-scroll zoom-in flex gap-4">
+          <button class="btn-secondary">Book a demo</button>
+          <button class="btn-primary border border-secondary">See our pricing</button>
         </div>
+      </div>
     </section>
-    <!-- Features -->
-    <section data-header="light" class="min-h-screen bg-black text-white flex items-center">
-        <div class="max-w-6xl mx-auto px-8 w-full">
-            <h2 class="animate-on-scroll slide-left text-6xl font-bold mb-16">
-                Features
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="animate-on-scroll slide-up border border-white/20 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">
-                        Fast
-                    </h3>
-                    <p class="text-gray-300">
-                        Optimized for performance and excellent Core Web Vitals.
-                    </p>
-                </div>
-                <div class="animate-on-scroll slide-up border border-white/20 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">
-                        Responsive
-                    </h3>
-                    <p class="text-gray-300">
-                        Designed to look great on desktop, tablet and mobile.
-                    </p>
-                </div>
-                <div class="animate-on-scroll slide-up border border-white/20 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">
-                        Reusable
-                    </h3>
-                    <p class="text-gray-300">
-                        Components and animations can be reused everywhere.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Pricing -->
-    <section data-header="dark" class="min-h-screen bg-white flex items-center">
-        <div class="max-w-6xl mx-auto px-8 w-full">
-            <h2 class="animate-on-scroll slide-up text-6xl font-bold text-center mb-16">
-                Pricing
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="animate-on-scroll zoom-in border rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">
-                        Starter
-                    </h3>
-                    <p class="text-5xl font-bold mb-6">
-                        $19
-                    </p>
-                    <button class="px-5 py-3 bg-black text-white rounded-lg">
-                        Choose Plan
-                    </button>
-                </div>
-                <div class="animate-on-scroll zoom-in border rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">
-                        Pro
-                    </h3>
-                    <p class="text-5xl font-bold mb-6">
-                        $49
-                    </p>
-                    <button class="px-5 py-3 bg-black text-white rounded-lg">
-                        Choose Plan
-                    </button>
-                </div>
-                <div class="animate-on-scroll zoom-in border rounded-xl p-8">
-                    <h3 class="text-2xl font-bold mb-4">
-                        Enterprise
-                    </h3>
-                    <p class="text-5xl font-bold mb-6">
-                        $99
-                    </p>
-                    <button class="px-5 py-3 bg-black text-white rounded-lg">
-                        Choose Plan
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact -->
-    <section data-header="light" class="min-h-screen bg-black text-white flex items-center">
-        <div class="max-w-4xl mx-auto px-8 text-center">
-            <h2 class="animate-on-scroll slide-up text-6xl font-bold mb-8">
-                Contact Us
-            </h2>
-            <p class="animate-on-scroll fade-in text-xl text-gray-300 mb-10">
-                Ready to launch your next project?
-            </p>
-            <button class="animate-on-scroll zoom-in px-8 py-4 bg-white text-black rounded-lg">
-                Contact Now
-            </button>
-        </div>
-    </section>
-    <script src="./assets/js/animation.js"></script>
-</body>
 
+    <section data-header="light" class="text-text bg-surface py-20">
+      <h6 class="mx-auto max-w-lg text-center">
+        Trusted by elite law firms, in-house counsels, and government agencies across the globe
+      </h6>
+      <div class="grid grid-cols-3 max-w-xl mx-auto">
+        <div>Image 1</div>
+        <div>Image 2</div>
+        <div>Image 3</div>
+      </div>
+    </section>
+    <section data-header="light" class="py-32">
+      <div class="max-w-6xl mx-auto px-8">
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="text-sm font-semibold uppercase tracking-widest text-emerald-700"> Value Proposition </span>
+
+          <h2 class="mt-4 text-5xl leading-tight">Communicate with more clarity, confidence, and control</h2>
+
+          <p class="mt-8 text-lg text-slate-600">
+            In a profession driven by words, your spoken performance defines how clients, judges, and colleagues value
+            your expertise.
+          </p>
+        </div>
+
+        <!-- Divider -->
+        <div class="max-w-xl mx-auto my-20 border-t border-slate-200"></div>
+
+        <!-- Content -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Image -->
+          <div class="relative">
+            <img
+              src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+              alt=""
+              class="w-full h-[520px] object-cover rounded-sm"
+            />
+
+            <!-- Mock Analytics Card -->
+            <div class="absolute top-1/2 right-8 -translate-y-1/2 bg-white rounded-lg shadow-xl w-64">
+              <div class="flex justify-between items-center p-4 border-b">
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                  <span class="text-sm font-medium"> Volume variability </span>
+                </div>
+
+                <span class="text-2xl text-slate-500"> 75/100 </span>
+              </div>
+
+              <div class="p-4 text-sm leading-relaxed text-slate-600">
+                Varying your volume according to the purpose of your message allows you to keep your audience's
+                attention and emphasize key points effectively.
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div>
+            <h3 class="text-5xl leading-tight mb-8">Command the room, every time</h3>
+
+            <p class="text-lg text-slate-600 mb-12">
+              Sharpen the vocal and non-verbal habits that make your communication precise and effective.
+            </p>
+
+            <div class="space-y-6">
+              <!-- Feature -->
+              <div class="border border-slate-200 p-8">
+                <h4 class="font-semibold text-xl mb-4">Master vocal dynamics</h4>
+
+                <p class="text-slate-600 leading-relaxed">
+                  Rhetorich analyzes your spoken communication and provides coaching plans to remove filler words,
+                  leverage pausing and project with confidence.
+                </p>
+              </div>
+
+              <!-- Feature -->
+              <div class="border border-slate-200 p-8">
+                <h4 class="font-semibold text-xl mb-4">Elevate your non-verbal credibility</h4>
+
+                <p class="text-slate-600 leading-relaxed">
+                  Get feedback on body language, eye contact and nervous habits, helping you master the art of
+                  influence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-header="light" class="h-screen text-text bg-background"></section>
+
+    <script src="./assets/js/animation.js"></script>
+  </body>
 </html>
