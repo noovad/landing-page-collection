@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #042e22;
+
+  --color-secondary: #bef4be;
+
+  --color-accent: #f59e0b;
+
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+
+  --color-background: #ffffff;
+  --color-surface: #f9faf9;
+
+  --color-text: #0f172a;
+  --color-text-muted: #e2e8e6;
+
+  --color-border: #718f85;
+}
+
+/* header */
+.header {
+  @apply fixed top-0 left-0 z-50 w-full flex items-center justify-between px-8 py-4 transition-all duration-500;
+}
+.header-light {
+  @apply bg-background text-primary shadow-md;
+}
+.header-dark {
+  @apply bg-primary text-white border-b ;
+}
+
+/* Reusable Animations */
+.animate-on-scroll {
+  @apply transition-all duration-700 ease-out;
+}
+.fade-in {
+  @apply opacity-0;
+}
+.slide-up {
+  @apply opacity-0 translate-y-12;
+}
+.slide-left {
+  @apply opacity-0 translate-x-12;
+}
+.slide-right {
+  @apply opacity-0 -translate-x-12;
+}
+.zoom-in {
+  @apply opacity-0 scale-95;
+}
+.animate-on-scroll.show {
+  @apply opacity-100 translate-x-0 translate-y-0 scale-100;
+}
