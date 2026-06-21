@@ -5,14 +5,14 @@ const sections = document.querySelectorAll("section");
 
 function showButton() {
   heroButton.classList.remove("translate-x-120", "opacity-100");
-  heroButton.classList.add("opacity-100");
-  headerNav.classList.add("-translate-x-12");
+  heroButton.classList.add("opacity-100", "ms-8");
+  headerNav.classList.remove("translate-x-36");
 }
 
 function hideButton() {
   heroButton.classList.add("translate-x-120", "opacity-0");
-  heroButton.classList.remove("opacity-100");
-  headerNav.classList.remove("-translate-x-12");
+  heroButton.classList.remove("opacity-100", "ms-8");
+  headerNav.classList.add("translate-x-36");
 }
 
 function updateHeader() {
@@ -34,14 +34,35 @@ function updateHeader() {
 }
 
 function initScrollAnimations() {
-  const elements = document.querySelectorAll(".animate-on-scroll");
+  const stagger = 200;
+
+  const animationClasses = ["fade-in", "slide-up", "slide-left", "slide-right", "zoom-in"];
+
+  document.querySelectorAll(".animate-on-scroll-group").forEach((group) => {
+    const items = group.querySelectorAll(animationClasses.map((c) => `.${c}`).join(","));
+
+    let accumulatedOffset = 0;
+
+    items.forEach((item, index) => {
+      item.classList.add("animate-on-scroll");
+
+      const delayClass = [...item.classList].find((c) => c.startsWith("delay-"));
+
+      const customDelay = delayClass ? parseInt(delayClass.replace("delay-", ""), 10) : 0;
+
+      const delay = Math.max(0, index * stagger + accumulatedOffset + customDelay);
+
+      item.style.transitionDelay = `${delay}ms`;
+
+      accumulatedOffset += customDelay;
+    });
+  });
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-
           observer.unobserve(entry.target);
         }
       });
@@ -51,8 +72,8 @@ function initScrollAnimations() {
     },
   );
 
-  elements.forEach((element) => {
-    observer.observe(element);
+  document.querySelectorAll(".animate-on-scroll").forEach((item) => {
+    observer.observe(item);
   });
 }
 

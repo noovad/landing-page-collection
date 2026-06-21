@@ -34,6 +34,56 @@
   button {
     @apply cursor-pointer;
   }
+
+  small,
+  .u-text-sm {
+    @apply text-xs;
+    @apply sm:text-sm;
+  }
+
+  p,
+  span {
+    @apply text-sm;
+    @apply sm:text-base;
+    @apply lg:text-lg;
+  }
+
+  h6 {
+    @apply text-sm;
+    @apply sm:text-base;
+    @apply lg:text-lg;
+  }
+
+  h5 {
+    @apply text-base;
+    @apply sm:text-lg;
+    @apply lg:text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+    @apply sm:text-xl;
+    @apply lg:text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply sm:text-2xl;
+    @apply lg:text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+    @apply sm:text-3xl;
+    @apply lg:text-4xl;
+  }
+
+  h1 {
+    @apply text-xl;
+    @apply sm:text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-6xl;
+  }
 }
 
 @layer utilities {
