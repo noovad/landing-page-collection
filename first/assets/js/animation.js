@@ -37,7 +37,6 @@ function initScrollAnimations() {
   const stagger = 200;
 
   const animationClasses = ["fade-in", "slide-up", "slide-left", "slide-right", "zoom-in"];
-
   document.querySelectorAll(".animate-on-scroll-group").forEach((group) => {
     const items = group.querySelectorAll(animationClasses.map((c) => `.${c}`).join(","));
 
@@ -45,6 +44,9 @@ function initScrollAnimations() {
 
     items.forEach((item, index) => {
       item.classList.add("animate-on-scroll");
+      if (![...item.classList].some((c) => c.startsWith("duration-"))) {
+        item.classList.add("duration-500");
+      }
 
       const delayClass = [...item.classList].find((c) => c.startsWith("delay-"));
 
@@ -79,5 +81,38 @@ function initScrollAnimations() {
 
 updateHeader();
 initScrollAnimations();
+
+function carousel() {
+  const track = document.getElementById("track");
+
+  const firstCard = track.firstElementChild;
+  const gap = 24;
+  const cardWidth = firstCard.offsetWidth + gap;
+
+  setInterval(() => {
+    // Geser ke kiri
+    track.style.transition = "transform 500ms ease";
+    track.style.transform = `translateX(-${cardWidth}px)`;
+
+    const onTransitionEnd = () => {
+      // Pindahkan card pertama ke belakang
+      track.appendChild(track.firstElementChild);
+
+      // Reset posisi tanpa animasi
+      track.style.transition = "none";
+      track.style.transform = "translateX(0)";
+
+      // Force reflow
+      track.offsetHeight;
+
+      track.removeEventListener("transitionend", onTransitionEnd);
+    };
+
+    track.addEventListener("transitionend", onTransitionEnd);
+  }, 3000);
+}
+
+
+carousel();
 
 window.addEventListener("scroll", updateHeader);

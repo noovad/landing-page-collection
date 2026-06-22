@@ -108,7 +108,7 @@
 
   /* Reusable Animations */
   .animate-on-scroll {
-    @apply transition-all duration-500 ease-out;
+    @apply transition-all ease-in-out;
   }
   .fade-in {
     @apply opacity-0;
@@ -128,4 +128,13 @@
   .animate-on-scroll.show {
     @apply opacity-100 translate-x-0 translate-y-0 scale-100;
   }
+}
+
+
+.track {
+  @apply w-xl flex gap-6 overflow-hidden mx-auto;
+}
+
+.card {
+  @apply min-w-[300px] h-[200px] bg-white flex justify-center items-center;
 }

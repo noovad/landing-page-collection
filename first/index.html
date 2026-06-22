@@ -39,25 +39,28 @@
       </div>
     </header>
     <!-- Hero -->
-    <section data-header="dark" data-hero="true" class="animate-on-scroll-group h-[90vh] text-white bg-primary overflow-hidden">
+    <section
+      data-header="dark"
+      data-hero="true"
+      class="animate-on-scroll-group h-[90vh] text-white bg-primary overflow-hidden"
+    >
       <div class="relative max-w-7xl h-full mx-auto px-8 flex flex-col items-center pt-44">
-        
         <div class="relative z-10 flex flex-col items-center">
           <h1 class="slide-up duration-300 mb-6 text-center leading-none tracking-tight">Speak like you're worth it</h1>
-          
+
           <h6 class="slide-up duration-500 mb-8 text-center max-w-2xl">
             A human+AI coaching platform helping lawyers become more impactful communicators — in client meetings,
             courtrooms, negotiations, and beyond.
           </h6>
-          
+
           <div class="flex gap-4">
             <button class="slide-right btn-secondary">Book a demo</button>
-            
+
             <button class="slide-left delay--200 btn-primary border border-secondary">See our pricing</button>
           </div>
         </div>
         <div
-          class="slide-up delay--600 absolute inset-x-0 bottom-0 h-[80%] bg-[url('./assets/image/hero.png')] bg-cover bg-bottom bg-no-repeat"
+          class="fade-in delay--400 absolute inset-x-0 bottom-0 h-[80%] bg-[url('./assets/image/hero.png')] bg-cover bg-bottom bg-no-repeat"
         ></div>
       </div>
     </section>
@@ -66,10 +69,14 @@
       <h6 class="mx-auto max-w-lg text-center">
         Trusted by elite law firms, in-house counsels, and government agencies across the globe
       </h6>
-      <div class="grid grid-cols-3 max-w-xl mx-auto">
-        <div>Image 1</div>
-        <div>Image 2</div>
-        <div>Image 3</div>
+      <div class="carousel">
+        <div class="track" id="track">
+          <div class="card">1</div>
+          <div class="card">2</div>
+          <div class="card">3</div>
+          <div class="card">4</div>
+          <div class="card">5</div>
+        </div>
       </div>
     </section>
     <section data-header="light" class="py-32">
@@ -107,7 +114,7 @@
                   <span class="font-medium"> Volume variability </span>
                 </div>
 
-                <span class=" text-slate-500"> 75/100 </span>
+                <span class="text-slate-500"> 75/100 </span>
               </div>
 
               <div class="p-4 leading-relaxed text-slate-600">
@@ -121,14 +128,14 @@
           <div>
             <h3 class="text-5xl leading-tight mb-8">Command the room, every time</h3>
 
-            <p class= text-slate-600 mb-12">
+            <p class="text-slate-600 mb-12">
               Sharpen the vocal and non-verbal habits that make your communication precise and effective.
             </p>
 
             <div class="space-y-6">
               <!-- Feature -->
               <div class="border border-slate-200 p-8">
-                <h4 class="font-semibold  mb-4">Master vocal dynamics</h4>
+                <h4 class="font-semibold mb-4">Master vocal dynamics</h4>
 
                 <p class="text-slate-600 leading-relaxed">
                   Rhetorich analyzes your spoken communication and provides coaching plans to remove filler words,
@@ -138,7 +145,7 @@
 
               <!-- Feature -->
               <div class="border border-slate-200 p-8">
-                <h4 class="font-semibold  mb-4">Elevate your non-verbal credibility</h4>
+                <h4 class="font-semibold mb-4">Elevate your non-verbal credibility</h4>
 
                 <p class="text-slate-600 leading-relaxed">
                   Get feedback on body language, eye contact and nervous habits, helping you master the art of
