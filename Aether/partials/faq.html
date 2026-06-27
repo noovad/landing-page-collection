@@ -5,9 +5,6 @@
       <h2 class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-4">
         Frequently asked questions
       </h2>
-      <p class="fade-in duration-1000 text-muted text-lg">
-        Everything you need to know about Aether.
-      </p>
     </div>
 
     <div class="space-y-4">
@@ -16,7 +13,7 @@
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
         >
-          <span>How does the free trial work?</span>
+          <span>How does Rhetorich keep my data secure?</span>
           <svg
             class="w-5 h-5 text-muted transition-transform duration-300"
             :class="{ 'rotate-180': open }"
@@ -28,7 +25,7 @@
         <div class="faq-collapse" :class="{ 'open': open }">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
-              You can start a 14-day free trial with full access to all Professional features. No credit card required. At the end of your trial, you can choose a plan that fits your needs or continue with our free Starter plan.
+              Security is our top priority. Rhetorich is SOC 2 Type II certified, uses end-to-end encryption for all data, and supports SSO, SCIM, and granular role-based access controls. We also offer dedicated private cloud deployments for enterprise customers.
             </div>
           </div>
         </div>
@@ -39,7 +36,7 @@
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
         >
-          <span>Can I change my plan later?</span>
+          <span>Is Rhetorich a software platform or human coaching service?</span>
           <svg
             class="w-5 h-5 text-muted transition-transform duration-300"
             :class="{ 'rotate-180': open }"
@@ -51,7 +48,7 @@
         <div class="faq-collapse" :class="{ 'open': open }">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
-              Absolutely. You can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, the new rate takes effect at the start of your next billing cycle.
+              Rhetorich combines both. Our AI-powered software platform provides personalized coaching, practice sessions, and performance analytics, while our expert coaches are available for one-on-one sessions when you need human guidance.
             </div>
           </div>
         </div>
@@ -62,7 +59,7 @@
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
         >
-          <span>What kind of support do you offer?</span>
+          <span>Who should use Rhetorich?</span>
           <svg
             class="w-5 h-5 text-muted transition-transform duration-300"
             :class="{ 'rotate-180': open }"
@@ -74,7 +71,7 @@
         <div class="faq-collapse" :class="{ 'open': open }">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
-              All plans include email support with a 24-hour response time. Professional plans get priority support with 4-hour response times. Enterprise customers receive a dedicated account manager and 1-hour response SLA.
+              Rhetorich is designed for lawyers, legal professionals, and anyone who wants to improve their communication skills in high-stakes situations. Whether you're a junior associate or a senior partner, our platform adapts to your skill level and goals.
             </div>
           </div>
         </div>
@@ -85,7 +82,7 @@
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
         >
-          <span>Is my data secure?</span>
+          <span>What is the subscription term?</span>
           <svg
             class="w-5 h-5 text-muted transition-transform duration-300"
             :class="{ 'rotate-180': open }"
@@ -97,7 +94,7 @@
         <div class="faq-collapse" :class="{ 'open': open }">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
-              Security is our top priority. Aether is SOC 2 Type II certified, uses end-to-end encryption for all data, and supports SSO, SCIM, and granular role-based access controls. We also offer dedicated private cloud deployments for enterprise customers.
+              We offer both monthly and annual subscription plans. Annual plans come with a 20% discount. You can upgrade or downgrade your plan at any time, and changes take effect at the start of your next billing cycle.
             </div>
           </div>
         </div>
@@ -108,7 +105,7 @@
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
         >
-          <span>Can I integrate with my existing tools?</span>
+          <span>Is there a minimum firm size?</span>
           <svg
             class="w-5 h-5 text-muted transition-transform duration-300"
             :class="{ 'rotate-180': open }"
@@ -120,7 +117,7 @@
         <div class="faq-collapse" :class="{ 'open': open }">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
-              Yes. Aether offers 200+ pre-built integrations with popular tools including Slack, GitHub, GitLab, Jira, Figma, and more. We also provide a REST API and webhooks for custom integrations.
+              No, there's no minimum firm size. Rhetorich is designed for solo practitioners, small firms, and large enterprises alike. Our Starter plan is perfect for individual lawyers, while our Enterprise plan scales to thousands of users.
             </div>
           </div>
         </div>
@@ -131,7 +128,7 @@
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
         >
-          <span>Do you offer discounts for startups?</span>
+          <span>How do I cancel a subscription?</span>
           <svg
             class="w-5 h-5 text-muted transition-transform duration-300"
             :class="{ 'rotate-180': open }"
@@ -143,7 +140,122 @@
         <div class="faq-collapse" :class="{ 'open': open }">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
-              We do. Our startup program offers significant discounts for early-stage companies. You can apply through our website, and if accepted, you'll receive up to 50% off for your first year. Contact our sales team for details.
+              You can cancel your subscription at any time from your account settings. There are no cancellation fees, and you'll continue to have access to your plan features until the end of your current billing period.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>Is there a free trial without coaching?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Yes, we offer a 14-day free trial that includes access to our AI-powered coaching features. No credit card required. You can explore the platform and see if it's the right fit for your needs before committing to a subscription.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>What if I want more frequent coaching?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Our Pro and Enterprise plans include access to human coaching sessions with our expert legal communication coaches. You can book sessions as needed, and our AI will recommend when additional coaching would be beneficial.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>What languages does the platform support?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Currently, Rhetorich supports English, Spanish, and French. We're actively working on adding more languages to serve our global user base. Contact us if you need support for a specific language.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>Can I see my videos?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Yes, all your practice sessions are recorded and stored securely in your account. You can review your videos at any time to track your progress and identify areas for improvement.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>What is a CLIPA? How do I find my "top"?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              CLIPA stands for Communication Learning Index and Performance Assessment. It's our proprietary metric that measures your overall communication effectiveness. Your CLIPA score is calculated based on vocal variety, clarity, pace, and other key factors. You can find your score in your dashboard under "Performance Metrics."
             </div>
           </div>
         </div>

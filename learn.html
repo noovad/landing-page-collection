@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <style>
+      .carousel {
+        overflow: hidden;
+        max-width: 948px;
+        margin: 0 auto;
+      }
+
+      .track {
+        display: flex;
+        gap: 24px;
+        transition: transform 500ms ease;
+        will-change: transform;
+      }
+
+      .card {
+        min-width: 300px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        flex-shrink: 0;
+        border-radius: 4px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #042e22;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header header-dark">
+      <div class="w-full mx-auto max-w-7xl flex justify-between items-center">
+        <h5 class="font-bold">Rhetorich</h5>
+        <div class="flex">
+          <nav
+            id="headerNav"
+            class="flex items-center gap-12 font-medium transition-all duration-300 ease-in-out translate-x-36"
+          >
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQ</a>
+          </nav>
+          <button
+            id="heroButton"
+            class="btn-secondary transition-all duration-300 ease-in-out translate-x-120 opacity-0"
+          >
+            Book a demo
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero -->
+    <section
+      data-header="dark"
+      data-hero="true"
+      class="animate-on-scroll-group h-[90vh] text-white bg-primary overflow-hidden"
+    >
+      <div class="relative max-w-7xl h-full mx-auto px-8 flex flex-col items-center pt-44">
+        <div class="relative z-10 flex flex-col items-center">
+          <h1 class="slide-up duration-300 mb-6 text-center leading-none tracking-tight">Speak like you're worth it</h1>
+
+          <h6 class="slide-up duration-500 mb-8 text-center max-w-2xl">
+            A human+AI coaching platform helping lawyers become more impactful communicators — in client meetings,
+            courtrooms, negotiations, and beyond.
+          </h6>
+
+          <div class="flex gap-4">
+            <button class="slide-right btn-secondary">Book a demo</button>
+
+            <button class="slide-left delay--200 btn-primary border border-secondary">See our pricing</button>
+          </div>
+        </div>
+        <div
+          class="fade-in delay--400 absolute inset-x-0 bottom-0 h-[80%] bg-[url('./assets/image/hero.png')] bg-cover bg-bottom bg-no-repeat"
+        ></div>
+      </div>
+    </section>
+
+    <section data-header="light" class="bg-surface py-20">
+      <h6 class="mx-auto max-w-lg text-center">
+        Trusted by elite law firms, in-house counsels, and government agencies across the globe
+      </h6>
+      <div class="carousel">
+        <div class="track" id="track"></div>
+      </div>
+    </section>
+    <section data-header="light" class="py-32">
+      <div class="max-w-6xl mx-auto px-8">
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="font-semibold uppercase tracking-widest text-emerald-700"> Value Proposition </span>
+
+          <h2 class="mt-4 text-5xl leading-tight">Communicate with more clarity, confidence, and control</h2>
+
+          <p class="mt-8 text-slate-600">
+            In a profession driven by words, your spoken performance defines how clients, judges, and colleagues value
+            your expertise.
+          </p>
+        </div>
+
+        <!-- Divider -->
+        <div class="max-w-xl mx-auto my-20 border-t border-slate-200"></div>
+
+        <!-- Content -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Image -->
+          <div class="relative">
+            <img
+              src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+              alt=""
+              class="w-full h-[520px] object-cover rounded-sm"
+            />
+
+            <!-- Mock Analytics Card -->
+            <div class="absolute top-1/2 right-8 -translate-y-1/2 bg-white rounded-lg shadow-xl w-64">
+              <div class="flex justify-between items-center p-4 border-b">
+                <div class="flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                  <span class="font-medium"> Volume variability </span>
+                </div>
+
+                <span class="text-slate-500"> 75/100 </span>
+              </div>
+
+              <div class="p-4 leading-relaxed text-slate-600">
+                Varying your volume according to the purpose of your message allows you to keep your audience's
+                attention and emphasize key points effectively.
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div>
+            <h3 class="text-5xl leading-tight mb-8">Command the room, every time</h3>
+
+            <p class="text-slate-600 mb-12">
+              Sharpen the vocal and non-verbal habits that make your communication precise and effective.
+            </p>
+
+            <div class="space-y-6">
+              <!-- Feature -->
+              <div class="border border-slate-200 p-8">
+                <h4 class="font-semibold mb-4">Master vocal dynamics</h4>
+
+                <p class="text-slate-600 leading-relaxed">
+                  Rhetorich analyzes your spoken communication and provides coaching plans to remove filler words,
+                  leverage pausing and project with confidence.
+                </p>
+              </div>
+
+              <!-- Feature -->
+              <div class="border border-slate-200 p-8">
+                <h4 class="font-semibold mb-4">Elevate your non-verbal credibility</h4>
+
+                <p class="text-slate-600 leading-relaxed">
+                  Get feedback on body language, eye contact and nervous habits, helping you master the art of
+                  influence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-header="light" class="h-screen text-text bg-background"></section>
+
+    <script>
+      const track = document.getElementById("track");
+      const gap = 24;
+      const visibleCount = 3;
+      const autoSlideInterval = 5000;
+      const transitionDuration = 500;
+
+      const originalData = [
+        { id: 1, label: "Allen & Overy" },
+        { id: 2, label: "Baker McKenzie" },
+        { id: 3, label: "Clifford Chance" },
+        { id: 4, label: "Davis Polk" },
+        { id: 5, label: "Freshfields" },
+      ];
+
+      const extendedData = [
+        ...originalData,
+        ...originalData.slice(0, visibleCount),
+      ];
+
+      extendedData.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.textContent = item.label;
+        track.appendChild(card);
+      });
+
+      let currentIndex = 0;
+
+      function getCardWidth() {
+        return track.firstElementChild.offsetWidth + gap;
+      }
+
+      function slide() {
+        currentIndex++;
+        const cardWidth = getCardWidth();
+        track.style.transition = `transform ${transitionDuration}ms ease`;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      }
+
+      track.addEventListener("transitionend", () => {
+        if (currentIndex >= originalData.length) {
+          currentIndex = 0;
+          track.style.transition = "none";
+          track.style.transform = "translateX(0)";
+          track.offsetHeight;
+        }
+      });
+
+      setInterval(slide, autoSlideInterval);
+    </script>
+  </body>
+</html>
