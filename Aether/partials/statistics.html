@@ -1,32 +1,35 @@
-<section data-header="solid" class="animate-on-scroll-group py-24 lg:py-32 bg-surface">
+<section data-header="solid" class="animate-on-scroll-group py-24 lg:py-32 bg-surface" aria-labelledby="impact-heading">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <div class="slide-right duration-1000">
         <img 
           src="https://picsum.photos/id/1074/800/600" 
-          alt="Legal professionals collaborating" 
+          alt="Team of legal professionals collaborating in a modern conference room" 
           class="w-full h-[500px] object-cover rounded-2xl"
+          loading="lazy"
+          width="800"
+          height="600"
         />
       </div>
       <div>
         <span class="slide-up duration-500 text-sm font-semibold tracking-widest text-secondary uppercase">Impact</span>
-        <h2 class="slide-up duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-6">
+        <h2 id="impact-heading" class="slide-up duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-6">
           For lawyers, by lawyers
         </h2>
         <p class="slide-up duration-1000 text-muted text-lg leading-relaxed mb-10">
           Rhetorich is designed by legal communication experts and trusted by elite law firms, in-house counsels, and government agencies across the globe.
         </p>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="fade-in duration-700 p-6 bg-primary text-white rounded-2xl">
-            <p class="counter text-3xl sm:text-4xl font-bold">1,000+</p>
+        <div class="grid grid-cols-3 gap-4" role="list">
+          <div class="fade-in duration-700 p-6 bg-primary text-white rounded-2xl" role="listitem">
+            <p class="counter text-3xl sm:text-4xl font-bold" data-target="1000" data-duration="2000">1,000+</p>
             <p class="text-white/80 mt-2 text-sm">professionals trained</p>
           </div>
-          <div class="fade-in duration-700 delay-100 p-6 bg-secondary/20 text-text rounded-2xl">
-            <p class="counter text-3xl sm:text-4xl font-bold">100,000+</p>
+          <div class="fade-in duration-700 delay-100 p-6 bg-secondary/20 text-text rounded-2xl" role="listitem">
+            <p class="counter text-3xl sm:text-4xl font-bold" data-target="100000" data-duration="3000">100,000+</p>
             <p class="text-muted mt-2 text-sm">improved interactions</p>
           </div>
-          <div class="fade-in duration-700 delay-200 p-6 bg-primary text-white rounded-2xl">
-            <p class="counter text-3xl sm:text-4xl font-bold">92%</p>
+          <div class="fade-in duration-700 delay-200 p-6 bg-primary text-white rounded-2xl" role="listitem">
+            <p class="counter text-3xl sm:text-4xl font-bold" data-target="92" data-duration="1500">92%</p>
             <p class="text-white/80 mt-2 text-sm">of our users are more confident after 6 months</p>
           </div>
         </div>

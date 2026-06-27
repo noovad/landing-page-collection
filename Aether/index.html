@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rhetorich — AI Communication Coach for Lawyers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Rhetorich is an AI-powered communication coach for lawyers. Improve your speaking skills, confidence, and clarity in courtrooms, client meetings, and negotiations." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rhetorich.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rhetorich — AI Communication Coach for Lawyers" />
+    <meta property="og:description" content="AI-powered communication coaching for legal professionals. Master vocal dynamics, body language, and persuasive speaking." />
+    <meta property="og:url" content="https://rhetorich.com/" />
+    <meta property="og:site_name" content="Rhetorich" />
+    <meta property="og:image" content="https://picsum.photos/id/1005/1200/630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rhetorich — AI Communication Coach for Lawyers" />
+    <meta name="twitter:description" content="AI-powered communication coaching for legal professionals. Master vocal dynamics, body language, and persuasive speaking." />
+    <meta name="twitter:image" content="https://picsum.photos/id/1005/1200/630" />
+
     <link rel="stylesheet" href="./css/app.css" />
     <script
       defer
@@ -17,8 +29,14 @@
     ></script>
   </head>
 
-  <body>
+  <body class="bg-background text-text">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2">
+      Skip to main content
+    </a>
+
     {{> header}}
+
+    <main id="main-content">
     {{> hero}}
     {{> trusted}}
     {{> features}}
@@ -29,6 +47,8 @@
     {{> testimonials}}
     {{> cta}}
     {{> faq}}
+    </main>
+
     {{> footer}}
 
     <script type="module" src="./js/app.js"></script>

@@ -1,28 +1,31 @@
-<section id="faq" data-header="solid" class="animate-on-scroll-group py-24 lg:py-32">
+<section id="faq" data-header="solid" class="animate-on-scroll-group py-24 lg:py-32" aria-labelledby="faq-heading">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
       <span class="fade-in duration-500 text-sm font-semibold tracking-widest text-secondary uppercase">FAQ</span>
-      <h2 class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-4">
+      <h2 id="faq-heading" class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-4">
         Frequently asked questions
       </h2>
     </div>
 
-    <div class="space-y-4">
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+    <div class="space-y-4" role="list">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-1"
         >
           <span>How does Rhetorich keep my data secure?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-1" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Security is our top priority. Rhetorich is SOC 2 Type II certified, uses end-to-end encryption for all data, and supports SSO, SCIM, and granular role-based access controls. We also offer dedicated private cloud deployments for enterprise customers.
@@ -31,21 +34,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-2"
         >
           <span>Is Rhetorich a software platform or human coaching service?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-2" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Rhetorich combines both. Our AI-powered software platform provides personalized coaching, practice sessions, and performance analytics, while our expert coaches are available for one-on-one sessions when you need human guidance.
@@ -54,21 +60,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-3"
         >
           <span>Who should use Rhetorich?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-3" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Rhetorich is designed for lawyers, legal professionals, and anyone who wants to improve their communication skills in high-stakes situations. Whether you're a junior associate or a senior partner, our platform adapts to your skill level and goals.
@@ -77,21 +86,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-4"
         >
           <span>What is the subscription term?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-4" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               We offer both monthly and annual subscription plans. Annual plans come with a 20% discount. You can upgrade or downgrade your plan at any time, and changes take effect at the start of your next billing cycle.
@@ -100,21 +112,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-5"
         >
           <span>Is there a minimum firm size?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-5" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               No, there's no minimum firm size. Rhetorich is designed for solo practitioners, small firms, and large enterprises alike. Our Starter plan is perfect for individual lawyers, while our Enterprise plan scales to thousands of users.
@@ -123,21 +138,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-6"
         >
           <span>How do I cancel a subscription?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-6" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               You can cancel your subscription at any time from your account settings. There are no cancellation fees, and you'll continue to have access to your plan features until the end of your current billing period.
@@ -146,21 +164,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-7"
         >
           <span>Is there a free trial without coaching?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-7" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Yes, we offer a 14-day free trial that includes access to our AI-powered coaching features. No credit card required. You can explore the platform and see if it's the right fit for your needs before committing to a subscription.
@@ -169,21 +190,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-8"
         >
           <span>What if I want more frequent coaching?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-8" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Our Pro and Enterprise plans include access to human coaching sessions with our expert legal communication coaches. You can book sessions as needed, and our AI will recommend when additional coaching would be beneficial.
@@ -192,21 +216,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-9"
         >
           <span>What languages does the platform support?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-9" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Currently, Rhetorich supports English, Spanish, and French. We're actively working on adding more languages to serve our global user base. Contact us if you need support for a specific language.
@@ -215,21 +242,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-10"
         >
           <span>Can I see my videos?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-10" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               Yes, all your practice sessions are recorded and stored securely in your account. You can review your videos at any time to track your progress and identify areas for improvement.
@@ -238,21 +268,24 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          :aria-expanded="open"
+          aria-controls="faq-11"
         >
           <span>What is a CLIPA? How do I find my "top"?</span>
           <svg
-            class="w-5 h-5 text-muted transition-transform duration-300"
+            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="faq-collapse" :class="{ 'open': open }">
+        <div id="faq-11" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               CLIPA stands for Communication Learning Index and Performance Assessment. It's our proprietary metric that measures your overall communication effectiveness. Your CLIPA score is calculated based on vocal variety, clarity, pace, and other key factors. You can find your score in your dashboard under "Performance Metrics."

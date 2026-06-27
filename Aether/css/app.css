@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #052F23;
-  --color-secondary: #5B8C6E;
-  --color-accent: #7DA893;
-  --color-background: #FFFFFF;
-  --color-surface: #F6F7F6;
-  --color-text: #1A2E25;
-  --color-muted: #7A8F88;
-  --color-border: #DCE0DE;
-  --color-success: #5B8C6E;
+  --color-primary: #052f23;
+  --color-secondary: #5b8c6e;
+  --color-accent: #7da893;
+  --color-background: #ffffff;
+  --color-surface: #f6f7f6;
+  --color-text: #1a2e25;
+  --color-muted: #7a8f88;
+  --color-border: #dce0de;
+  --color-success: #5b8c6e;
 }
 
 @layer base {
@@ -17,12 +17,51 @@
     font-family: "Inter", sans-serif;
     color: var(--color-text);
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Inter", sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lora", serif;
     letter-spacing: -0.02em;
   }
+
   button {
     @apply cursor-pointer;
+  }
+
+  /* Focus-visible styles for keyboard navigation (WCAG 2.4.7) */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-secondary;
+  }
+
+  /* Ensure skip link is visible when focused */
+  .sr-only:focus {
+    @apply not-sr-only;
+  }
+}
+
+/* Reduced motion preference (WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .carousel-track {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .logo-track {
+    animation: none !important;
+    transform: none !important;
   }
 }
 
@@ -30,14 +69,17 @@
   .btn-primary {
     @apply bg-secondary text-white font-medium whitespace-nowrap px-7 py-3.5 rounded-lg;
     @apply hover:bg-[#4D7A5E] transition-colors;
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
   }
   .btn-outline {
     @apply border border-white/20 text-white font-medium whitespace-nowrap px-7 py-3.5 rounded-lg;
     @apply hover:bg-white/10 transition-colors;
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
   }
   .btn-ghost {
     @apply border border-border text-text font-medium whitespace-nowrap px-7 py-3.5 rounded-lg;
     @apply hover:bg-surface transition-colors;
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
   }
 
   .header {
@@ -103,7 +145,9 @@
 .faq-collapse {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s ease, opacity 0.3s ease;
+  transition:
+    grid-template-rows 0.35s ease,
+    opacity 0.3s ease;
   opacity: 0;
 }
 
