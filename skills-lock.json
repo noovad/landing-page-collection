@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "alpine-js": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "skillPath": "alpine-js/SKILL.md",
+      "computedHash": "529e2ee02bf6e2adece466e7148b9288182637fefc3b5d4f3eeb18e12906445c"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336"
+    },
+    "image-optimization": {
+      "source": "secondsky/claude-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/image-optimization/skills/image-optimization/SKILL.md",
+      "computedHash": "9d87722ea2451ca31d580526f9d3beb63515c7a5f946d6f2d96be48b7d49fbdf"
+    },
+    "modern-javascript-patterns": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/javascript-typescript/skills/modern-javascript-patterns/SKILL.md",
+      "computedHash": "ef81ef5b5b70287b3962dd0fce50c90b27c636e940ec4e80f9a0b216587be549"
+    },
+    "responsive-design": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/ui-design/skills/responsive-design/SKILL.md",
+      "computedHash": "794cc7f1b2f79d398135d19ef3fe32c406dde926b9bdf86ee3fe7b939a0be906"
+    },
+    "scroll-animations": {
+      "source": "dylantarre/animation-principles",
+      "sourceType": "github",
+      "skillPath": "skills/05-by-animation-type/scroll-animations/SKILL.md",
+      "computedHash": "1dd984a631d29f3ede3cbe3302e8998560e5426761a5f57ed7bb4e74cb8ad2a3"
+    },
+    "tailwind-design-system": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+      "computedHash": "cd61afd28f594e8b6712b61749209cbb4466e3eec4e4223793bbd97fc85c1b63"
+    }
+  }
+}

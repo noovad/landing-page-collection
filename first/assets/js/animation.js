@@ -84,34 +84,21 @@ initScrollAnimations();
 
 function carousel() {
   const track = document.getElementById("track");
-
-  const firstCard = track.firstElementChild;
   const gap = 24;
-  const cardWidth = firstCard.offsetWidth + gap;
+
+  track.addEventListener("transitionend", () => {
+    track.appendChild(track.firstElementChild);
+    track.style.transition = "none";
+    track.style.transform = "translateX(0)";
+    track.offsetHeight;
+  });
 
   setInterval(() => {
-    // Geser ke kiri
+    const cardWidth = track.firstElementChild.offsetWidth + gap;
     track.style.transition = "transform 500ms ease";
     track.style.transform = `translateX(-${cardWidth}px)`;
-
-    const onTransitionEnd = () => {
-      // Pindahkan card pertama ke belakang
-      track.appendChild(track.firstElementChild);
-
-      // Reset posisi tanpa animasi
-      track.style.transition = "none";
-      track.style.transform = "translateX(0)";
-
-      // Force reflow
-      track.offsetHeight;
-
-      track.removeEventListener("transitionend", onTransitionEnd);
-    };
-
-    track.addEventListener("transitionend", onTransitionEnd);
   }, 3000);
 }
-
 
 carousel();
 
