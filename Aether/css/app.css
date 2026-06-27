@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #052F23;
+  --color-secondary: #5B8C6E;
+  --color-accent: #7DA893;
+  --color-background: #FFFFFF;
+  --color-surface: #F6F7F6;
+  --color-text: #1A2E25;
+  --color-muted: #7A8F88;
+  --color-border: #DCE0DE;
+  --color-success: #5B8C6E;
+}
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.02em;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-secondary text-white font-medium whitespace-nowrap px-7 py-3.5 rounded-lg;
+    @apply hover:bg-[#4D7A5E] transition-colors;
+  }
+  .btn-outline {
+    @apply border border-white/20 text-white font-medium whitespace-nowrap px-7 py-3.5 rounded-lg;
+    @apply hover:bg-white/10 transition-colors;
+  }
+  .btn-ghost {
+    @apply border border-border text-text font-medium whitespace-nowrap px-7 py-3.5 rounded-lg;
+    @apply hover:bg-surface transition-colors;
+  }
+
+  .header {
+    @apply fixed top-0 left-0 z-50 w-full px-6 lg:px-10 py-5;
+    @apply transition-all duration-500;
+  }
+  .header-transparent {
+    @apply bg-transparent text-white;
+  }
+  .header-solid {
+    @apply bg-white/95 backdrop-blur-md text-text border-b border-border;
+    @apply shadow-sm;
+  }
+
+  .animate-on-scroll {
+    @apply transition-all ease-out;
+  }
+  .fade-in {
+    @apply opacity-0;
+  }
+  .slide-up {
+    @apply opacity-0 translate-y-10;
+  }
+  .slide-left {
+    @apply opacity-0 translate-x-10;
+  }
+  .slide-right {
+    @apply opacity-0 -translate-x-10;
+  }
+  .zoom-in {
+    @apply opacity-0 scale-[0.97];
+  }
+  .animate-on-scroll.show {
+    @apply opacity-100 translate-x-0 translate-y-0 scale-100;
+  }
+}
+
+.logo-track {
+  display: flex;
+  gap: 4rem;
+  width: max-content;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.carousel-card {
+  min-width: 350px;
+  width: 400px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .carousel-card {
+    min-width: 280px;
+    width: 300px;
+  }
+}
+
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-collapse.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.faq-collapse > div {
+  overflow: hidden;
+  min-height: 0;
+}

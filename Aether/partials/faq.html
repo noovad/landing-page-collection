@@ -1,0 +1,153 @@
+<section id="faq" data-header="solid" class="animate-on-scroll-group py-24 lg:py-32">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10">
+    <div class="text-center mb-16">
+      <span class="fade-in duration-500 text-sm font-semibold tracking-widest text-secondary uppercase">FAQ</span>
+      <h2 class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-4">
+        Frequently asked questions
+      </h2>
+      <p class="fade-in duration-1000 text-muted text-lg">
+        Everything you need to know about Aether.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>How does the free trial work?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              You can start a 14-day free trial with full access to all Professional features. No credit card required. At the end of your trial, you can choose a plan that fits your needs or continue with our free Starter plan.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>Can I change my plan later?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Absolutely. You can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, the new rate takes effect at the start of your next billing cycle.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>What kind of support do you offer?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              All plans include email support with a 24-hour response time. Professional plans get priority support with 4-hour response times. Enterprise customers receive a dedicated account manager and 1-hour response SLA.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>Is my data secure?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Security is our top priority. Aether is SOC 2 Type II certified, uses end-to-end encryption for all data, and supports SSO, SCIM, and granular role-based access controls. We also offer dedicated private cloud deployments for enterprise customers.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>Can I integrate with my existing tools?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              Yes. Aether offers 200+ pre-built integrations with popular tools including Slack, GitHub, GitLab, Jira, Figma, and more. We also provide a REST API and webhooks for custom integrations.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden">
+        <button
+          @click="open = !open"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+        >
+          <span>Do you offer discounts for startups?</span>
+          <svg
+            class="w-5 h-5 text-muted transition-transform duration-300"
+            :class="{ 'rotate-180': open }"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-collapse" :class="{ 'open': open }">
+          <div>
+            <div class="px-6 pb-5 text-muted leading-relaxed">
+              We do. Our startup program offers significant discounts for early-stage companies. You can apply through our website, and if accepted, you'll receive up to 50% off for your first year. Contact our sales team for details.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
