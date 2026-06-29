@@ -78,11 +78,6 @@
     animation: none !important;
     transform: none !important;
   }
-
-  .logo-track {
-    animation: none !important;
-    transform: none !important;
-  }
 }
 
 @layer utilities {
@@ -115,6 +110,7 @@
 
   .card-testimonial {
     @apply bg-white border border-border p-8 shadow-sm flex flex-col;
+    @apply min-w-[400px] w-[600px] shrink-0;
   }
 
   .card-pricing {
@@ -187,30 +183,8 @@
   .animate-on-scroll.show {
     @apply opacity-100 translate-x-0 translate-y-0 scale-100;
   }
-}
-
-.logo-track {
-  display: flex;
-  gap: 4rem;
-  width: max-content;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.carousel-card {
-  min-width: 350px;
-  width: 400px;
-  flex-shrink: 0;
-}
-
-@media (max-width: 640px) {
-  .carousel-card {
-    min-width: 280px;
-    width: 300px;
+  .logo-card {
+    @apply w-1/6 h-20 flex items-center justify-center bg-background shrink-0;
   }
 }
 

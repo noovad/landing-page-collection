@@ -5,14 +5,14 @@ const sections = document.querySelectorAll("section[data-header]");
 
 function showCta() {
   headerCta.classList.remove("translate-x-[50vw]");
-  headerCta.classList.add("ms-12");
-  headerNav.classList.remove("translate-x-38");
+  headerCta.classList.add("ms-8");
+  headerNav.classList.remove("translate-x-32");
 }
 
 function hideCta() {
   headerCta.classList.add("translate-x-[50vw]");
-  headerCta.classList.remove("ms-12");
-  headerNav.classList.add("translate-x-38");
+  headerCta.classList.remove("ms-8");
+  headerNav.classList.add("translate-x-32");
 }
 
 function updateHeader() {

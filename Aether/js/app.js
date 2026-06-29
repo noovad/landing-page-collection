@@ -21,7 +21,6 @@ initAnimations();
 initCounters();
 initCarousel();
 
-// Convert semua <i data-lucide="..."> menjadi SVG
 createIcons({ icons });
 
 Alpine.start();

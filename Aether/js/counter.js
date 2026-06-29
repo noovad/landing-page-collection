@@ -1,12 +1,13 @@
-function animateCounter(element, target, duration) {
-  const startTime = performance.now();
+const easeOutCubic = (t) => 1 - (1 - t) ** 3;
 
-  function update(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = Math.floor(eased * target);
-    element.textContent = current.toLocaleString();
+function animateCounter(element, target, duration) {
+  const start = performance.now();
+
+  function update(now) {
+    const progress = Math.min((now - start) / duration, 1);
+
+    element.textContent = Math.floor(easeOutCubic(progress) * target).toLocaleString();
+
     if (progress < 1) {
       requestAnimationFrame(update);
     } else {
@@ -19,20 +20,15 @@ function animateCounter(element, target, duration) {
 
 export function initCounters() {
   document.querySelectorAll(".counter").forEach((counter) => {
-    const target = parseInt(counter.dataset.target, 10);
-    const raw = parseInt(counter.dataset.duration, 10);
-    const duration = raw > 0 ? raw : 2000;
-    let started = false;
+    const target = Number(counter.dataset.target);
+    const duration = Number(counter.dataset.duration) || 2000;
 
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !started) {
-            started = true;
-            animateCounter(counter, target, duration);
-            observer.unobserve(entry.target);
-          }
-        });
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        animateCounter(counter, target, duration);
+        observer.unobserve(counter);
       },
       { threshold: 0.5 },
     );
