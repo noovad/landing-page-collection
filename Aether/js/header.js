@@ -4,24 +4,22 @@ const headerNav = document.getElementById("headerNav");
 const sections = document.querySelectorAll("section[data-header]");
 
 function showCta() {
-  headerCta.classList.remove("translate-x-12", "opacity-0");
-  headerCta.classList.add("opacity-100");
-  headerNav.classList.add("-translate-x-12");
+  headerCta.classList.remove("translate-x-[50vw]");
+  headerCta.classList.add("ms-12");
+  headerNav.classList.remove("translate-x-38");
 }
 
 function hideCta() {
-  headerCta.classList.add("translate-x-12", "opacity-0");
-  headerCta.classList.remove("opacity-100");
-  headerNav.classList.remove("-translate-x-12");
+  headerCta.classList.add("translate-x-[50vw]");
+  headerCta.classList.remove("ms-12");
+  headerNav.classList.add("translate-x-38");
 }
 
 function updateHeader() {
   sections.forEach((section) => {
     const rect = section.getBoundingClientRect();
     if (rect.top <= 80 && rect.bottom >= 80) {
-      header.className = header.className
-        .replace(/header-(transparent|solid)/g, "")
-        .trim();
+      header.className = header.className.replace(/header-(transparent|solid)/g, "").trim();
       header.classList.add(`header-${section.dataset.header}`);
       if (section.dataset.hero === "true") {
         hideCta();
