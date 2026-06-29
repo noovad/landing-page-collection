@@ -8,9 +8,15 @@
   --color-background: #ffffff;
   --color-surface: #f6f7f6;
   --color-text: #1a2e25;
-  --color-muted: #7a8f88;
+  --color-muted: rgb(106, 127, 120);
   --color-border: #dce0de;
   --color-success: #5b8c6e;
+  --color-success-bright: #22c55e;
+  --color-highlight: #dce6e1;
+  --color-overlay: rgba(255, 255, 255, 0.1);
+  --color-on-dark: #ffffff;
+  --color-on-dark-secondary: rgba(255, 255, 255, 0.8);
+  --color-on-dark-muted: rgba(255, 255, 255, 0.6);
 }
 
 @layer base {
@@ -46,14 +52,14 @@
 
 @layer components {
   .section-divider {
-    @apply h-16 w-1/2 absolute bottom-0 left-1/2 -translate-x-1/2 opacity-50;
+    @apply h-16 w-3/4 absolute bottom-0 left-1/2 -translate-x-1/2 opacity-50;
 
     background-image: repeating-linear-gradient(
       -45deg,
       transparent 0,
       transparent 6px,
-      rgb(229 231 235) 6px,
-      rgb(229 231 235) 8px
+      var(--color-border) 6px,
+      var(--color-border) 8px
     );
   }
 }
