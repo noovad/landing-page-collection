@@ -9,6 +9,7 @@ import "@fontsource/lora/600.css";
 import "@fontsource/lora/700.css";
 
 import Alpine from "alpinejs";
+import { createIcons, icons } from "lucide";
 
 import { initHeader } from "./header.js";
 import { initAnimations } from "./animation.js";
@@ -19,5 +20,8 @@ initHeader();
 initAnimations();
 initCounters();
 initCarousel();
+
+// Convert semua <i data-lucide="..."> menjadi SVG
+createIcons({ icons });
 
 Alpine.start();

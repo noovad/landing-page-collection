@@ -1,34 +1,25 @@
 <section id="faq" data-header="solid" class="animate-on-scroll-group py-24 lg:py-32" aria-labelledby="faq-heading">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
-      <span class="fade-in duration-500 text-sm font-semibold tracking-widest text-secondary uppercase">FAQ</span>
-      <h2
-        id="faq-heading"
-        class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-4 mb-4"
-      >
+      <h2 id="faq-heading" class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl leading-tight mt-4 mb-4">
         Frequently asked questions
       </h2>
     </div>
 
     <div class="space-y-4" role="list">
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
           :aria-expanded="open"
           aria-controls="faq-1"
         >
           <span>How does Aether keep my data secure?</span>
-          <svg
+          <i
+            data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          ></i>
         </button>
         <div id="faq-1" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
@@ -41,24 +32,19 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
           :aria-expanded="open"
           aria-controls="faq-2"
         >
           <span>Is Aether a software platform or human coaching service?</span>
-          <svg
+          <i
+            data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          ></i>
         </button>
         <div id="faq-2" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
@@ -71,24 +57,19 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
           :aria-expanded="open"
           aria-controls="faq-3"
         >
           <span>Who should use Aether?</span>
-          <svg
+          <i
+            data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          ></i>
         </button>
         <div id="faq-3" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
@@ -101,24 +82,19 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
           :aria-expanded="open"
           aria-controls="faq-4"
         >
           <span>What is the subscription term?</span>
-          <svg
+          <i
+            data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          ></i>
         </button>
         <div id="faq-4" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
@@ -131,24 +107,19 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
           :aria-expanded="open"
           aria-controls="faq-5"
         >
           <span>Is there a minimum firm size?</span>
-          <svg
+          <i
+            data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          ></i>
         </button>
         <div id="faq-5" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
@@ -161,179 +132,25 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
+          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
           :aria-expanded="open"
           aria-controls="faq-6"
         >
           <span>How do I cancel a subscription?</span>
-          <svg
+          <i
+            data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          ></i>
         </button>
         <div id="faq-6" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted leading-relaxed">
               You can cancel your subscription at any time from your account settings. There are no cancellation fees,
               and you'll continue to have access to your plan features until the end of your current billing period.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
-          :aria-expanded="open"
-          aria-controls="faq-7"
-        >
-          <span>Is there a free trial without coaching?</span>
-          <svg
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="faq-7" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
-              Yes, we offer a 14-day free trial that includes access to our AI-powered coaching features. No credit card
-              required. You can explore the platform and see if it's the right fit for your needs before committing to a
-              subscription.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
-          :aria-expanded="open"
-          aria-controls="faq-8"
-        >
-          <span>What if I want more frequent coaching?</span>
-          <svg
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="faq-8" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
-              Our Pro and Enterprise plans include access to human coaching sessions with our expert legal communication
-              coaches. You can book sessions as needed, and our AI will recommend when additional coaching would be
-              beneficial.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
-          :aria-expanded="open"
-          aria-controls="faq-9"
-        >
-          <span>What languages does the platform support?</span>
-          <svg
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="faq-9" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
-              Currently, Aether supports English, Spanish, and French. We're actively working on adding more languages
-              to serve our global user base. Contact us if you need support for a specific language.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
-          :aria-expanded="open"
-          aria-controls="faq-10"
-        >
-          <span>Can I see my videos?</span>
-          <svg
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="faq-10" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
-              Yes, all your practice sessions are recorded and stored securely in your account. You can review your
-              videos at any time to track your progress and identify areas for improvement.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="border border-border rounded-xl overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text hover:bg-surface transition-colors"
-          :aria-expanded="open"
-          aria-controls="faq-11"
-        >
-          <span>What is a CLIPA? How do I find my "top"?</span>
-          <svg
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div id="faq-11" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
-              CLIPA stands for Communication Learning Index and Performance Assessment. It's our proprietary metric that
-              measures your overall communication effectiveness. Your CLIPA score is calculated based on vocal variety,
-              clarity, pace, and other key factors. You can find your score in your dashboard under "Performance
-              Metrics."
             </div>
           </div>
         </div>

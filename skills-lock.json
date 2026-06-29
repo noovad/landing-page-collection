@@ -25,6 +25,12 @@
       "skillPath": "plugins/image-optimization/skills/image-optimization/SKILL.md",
       "computedHash": "9d87722ea2451ca31d580526f9d3beb63515c7a5f946d6f2d96be48b7d49fbdf"
     },
+    "lucide-icons": {
+      "source": "aksuharun/skills",
+      "sourceType": "github",
+      "skillPath": "lucide-icons/SKILL.md",
+      "computedHash": "f9e81a2119173db069d84712943a45c3a43ea5baf87bedabe3c859fe2d40d06e"
+    },
     "modern-javascript-patterns": {
       "source": "wshobson/agents",
       "sourceType": "github",

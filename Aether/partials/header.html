@@ -16,13 +16,13 @@
       <button id="headerCta" class="btn-primary text-sm transition-all duration-500">Book a demo</button>
       <button
         @click="mobileOpen = !mobileOpen"
-        class="md:hidden text-2xl text-text"
+        class="md:hidden text-text"
         aria-label="Toggle menu"
         :aria-expanded="mobileOpen"
         aria-controls="mobile-menu"
       >
-        <span x-show="!mobileOpen" x-cloak>&#9776;</span>
-        <span x-show="mobileOpen" x-cloak>&#10005;</span>
+        <i x-show="!mobileOpen" data-lucide="menu" class="w-6 h-6" x-cloak></i>
+        <i x-show="mobileOpen" data-lucide="x" class="w-6 h-6" x-cloak></i>
       </button>
     </div>
   </div>
