@@ -1,19 +1,19 @@
 <header id="header" x-data="{ mobileOpen: false }" class="header header-solid" role="banner">
   <div class="mx-auto max-w-7xl flex items-center justify-between">
     <a href="#" class="flex items-center gap-2" aria-label="Aether - Home">
-      <span class="font-bold text-xl text-text">Aether</span>
+      <span class="logo-text text-text">Aether</span>
     </a>
     <div class="flex items-center gap-3">
       <nav
         id="headerNav"
-        class="hidden md:flex items-center gap-8 font-medium text-sm transition-all duration-500"
+        class="hidden md:flex items-center gap-8 nav-link-desktop transition-all duration-500"
         aria-label="Main navigation"
       >
         <a href="#features" class="hover:text-secondary transition-colors text-text">Product</a>
         <a href="#pricing" class="hover:text-secondary transition-colors text-text">Pricing</a>
         <a href="#faq" class="hover:text-secondary transition-colors text-text">FAQ</a>
       </nav>
-      <button id="headerCta" class="btn-primary text-sm transition-all duration-500">Book a demo</button>
+      <button id="headerCta" class="btn-accent text-sm">Book a demo</button>
       <button
         @click="mobileOpen = !mobileOpen"
         class="md:hidden text-text"
@@ -37,12 +37,12 @@
     role="navigation"
     aria-label="Mobile navigation"
   >
-    <nav class="flex flex-col gap-4 text-base font-medium">
+    <nav class="flex flex-col gap-4 nav-link-mobile">
       <a href="#features" @click="mobileOpen = false">Product</a>
       <a href="#pricing" @click="mobileOpen = false">Pricing</a>
       <a href="#faq" @click="mobileOpen = false">FAQ</a>
       <hr class="border-border" />
-      <a href="#" @click="mobileOpen = false" class="btn-primary text-center">Book a demo</a>
+      <a href="#" @click="mobileOpen = false" class="btn-accent text-center w-full">Book a demo</a>
     </nav>
   </div>
 </header>

@@ -18,7 +18,7 @@ export function initAnimations() {
     items.forEach((item, index) => {
       item.classList.add("animate-on-scroll");
       if (![...item.classList].some((c) => c.startsWith("duration-"))) {
-        item.classList.add("duration-700");
+        item.classList.add("duration-500");
       }
 
       const delayClass = [...item.classList].find((c) =>
@@ -45,7 +45,7 @@ export function initAnimations() {
         }
       });
     },
-    { threshold: 0.15 },
+    { threshold: 0.1 },
   );
 
   document.querySelectorAll(".animate-on-scroll").forEach((item) => {

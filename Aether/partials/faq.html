@@ -1,16 +1,14 @@
 <section id="faq" data-header="solid" class="animate-on-scroll-group py-24 lg:py-32" aria-labelledby="faq-heading">
   <div class="max-w-3xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
-      <h2 id="faq-heading" class="fade-in duration-700 text-3xl sm:text-4xl lg:text-5xl leading-tight mt-4 mb-4">
-        Frequently asked questions
-      </h2>
+      <h2 id="faq-heading" class="fade-in duration-500 section-title mt-4 mb-4">Frequently asked questions</h2>
     </div>
 
-    <div class="space-y-4" role="list">
-      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
+    <div role="list">
+      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
+          class="w-full flex justify-between items-center px-6 py-5 text-left faq-question text-text"
           :aria-expanded="open"
           aria-controls="faq-1"
         >
@@ -23,7 +21,7 @@
         </button>
         <div id="faq-1" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
+            <div class="px-6 pb-5 faq-answer">
               Security is our top priority. Aether is SOC 2 Type II certified, uses end-to-end encryption for all data,
               and supports SSO, SCIM, and granular role-based access controls. We also offer dedicated private cloud
               deployments for enterprise customers.
@@ -32,10 +30,10 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
+          class="w-full flex justify-between items-center px-6 py-5 text-left faq-question text-text"
           :aria-expanded="open"
           aria-controls="faq-2"
         >
@@ -48,7 +46,7 @@
         </button>
         <div id="faq-2" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
+            <div class="px-6 pb-5 faq-answer">
               Aether combines both. Our AI-powered software platform provides personalized coaching, practice sessions,
               and performance analytics, while our expert coaches are available for one-on-one sessions when you need
               human guidance.
@@ -57,10 +55,10 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
+          class="w-full flex justify-between items-center px-6 py-5 text-left faq-question text-text"
           :aria-expanded="open"
           aria-controls="faq-3"
         >
@@ -73,7 +71,7 @@
         </button>
         <div id="faq-3" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
+            <div class="px-6 pb-5 faq-answer">
               Aether is designed for lawyers, legal professionals, and anyone who wants to improve their communication
               skills in high-stakes situations. Whether you're a junior associate or a senior partner, our platform
               adapts to your skill level and goals.
@@ -82,10 +80,10 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
+          class="w-full flex justify-between items-center px-6 py-5 text-left faq-question text-text"
           :aria-expanded="open"
           aria-controls="faq-4"
         >
@@ -98,7 +96,7 @@
         </button>
         <div id="faq-4" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
+            <div class="px-6 pb-5 faq-answer">
               We offer both monthly and annual subscription plans. Annual plans come with a 20% discount. You can
               upgrade or downgrade your plan at any time, and changes take effect at the start of your next billing
               cycle.
@@ -107,10 +105,10 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
+          class="w-full flex justify-between items-center px-6 py-5 text-left faq-question text-text"
           :aria-expanded="open"
           aria-controls="faq-5"
         >
@@ -123,7 +121,7 @@
         </button>
         <div id="faq-5" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
+            <div class="px-6 pb-5 faq-answer">
               No, there's no minimum firm size. Aether is designed for solo practitioners, small firms, and large
               enterprises alike. Our Starter plan is perfect for individual lawyers, while our Enterprise plan scales to
               thousands of users.
@@ -132,10 +130,10 @@
         </div>
       </div>
 
-      <div x-data="{ open: false }" class="rounded-xl overflow-hidden" role="listitem">
+      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left font-medium text-text"
+          class="w-full flex justify-between items-center px-6 py-5 text-left faq-question text-text"
           :aria-expanded="open"
           aria-controls="faq-6"
         >
@@ -148,7 +146,7 @@
         </button>
         <div id="faq-6" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
-            <div class="px-6 pb-5 text-muted leading-relaxed">
+            <div class="px-6 pb-5 faq-answer">
               You can cancel your subscription at any time from your account settings. There are no cancellation fees,
               and you'll continue to have access to your plan features until the end of your current billing period.
             </div>
