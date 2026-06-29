@@ -9,7 +9,22 @@ import "@fontsource/lora/600.css";
 import "@fontsource/lora/700.css";
 
 import Alpine from "alpinejs";
-import { createIcons, icons } from "lucide";
+import {
+  createIcons,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  Check,
+  CheckCircle,
+  Handshake,
+  Menu,
+  MessageSquare,
+  Monitor,
+  Search,
+  TrendingUp,
+  Users,
+  X,
+} from "lucide";
 
 import { initHeader } from "./header.js";
 import { initAnimations } from "./animation.js";
@@ -21,6 +36,22 @@ initAnimations();
 initCounters();
 initCarousel();
 
-createIcons({ icons });
+createIcons({
+  icons: {
+    ChevronDown,
+    ChevronLeft,
+    ChevronRight,
+    Check,
+    CheckCircle,
+    Handshake,
+    Menu,
+    MessageSquare,
+    Monitor,
+    Search,
+    TrendingUp,
+    Users,
+    X,
+  },
+});
 
 Alpine.start();

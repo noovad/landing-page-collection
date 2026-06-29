@@ -10,7 +10,7 @@
       <p class="slide-up text-lg leading-relaxed mb-10">
         {{impact.description}}
       </p>
-      <div class="fade-in flex flex-wrap gap-4">
+      <div class="fade-in flex flex-wrap gap-4" role="list">
         {{#each impact.stats}}
         <div class="min-w-[300px] flex-1 p-6 {{#if @first}}bg-primary text-on-dark{{else}}{{#if @last}}bg-primary text-on-dark{{else}}bg-secondary/20{{/if}}{{/if}}" role="listitem">
           <p class="text-3xl font-medium"><span class="counter" data-target="{{value}}" data-duration="2000"></span>{{suffix}}</p>
