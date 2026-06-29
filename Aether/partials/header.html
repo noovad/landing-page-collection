@@ -1,12 +1,7 @@
-<header
-  id="header"
-  x-data="{ mobileOpen: false }"
-  class="header header-solid"
-  role="banner"
->
+<header id="header" x-data="{ mobileOpen: false }" class="header header-solid" role="banner">
   <div class="mx-auto max-w-7xl flex items-center justify-between">
-    <a href="#" class="flex items-center gap-2" aria-label="Rhetorich - Home">
-      <span class="font-bold text-xl text-text">Rhetorich</span>
+    <a href="#" class="flex items-center gap-2" aria-label="Aether - Home">
+      <span class="font-bold text-xl text-text">Aether</span>
     </a>
     <div class="flex items-center gap-3">
       <nav
@@ -18,12 +13,7 @@
         <a href="#pricing" class="hover:text-secondary transition-colors text-text">Pricing</a>
         <a href="#faq" class="hover:text-secondary transition-colors text-text">FAQ</a>
       </nav>
-      <button
-        id="headerCta"
-        class="btn-primary text-sm transition-all duration-500"
-      >
-        Book a demo
-      </button>
+      <button id="headerCta" class="btn-primary text-sm transition-all duration-500">Book a demo</button>
       <button
         @click="mobileOpen = !mobileOpen"
         class="md:hidden text-2xl text-text"

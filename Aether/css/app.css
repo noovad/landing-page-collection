@@ -95,7 +95,7 @@
   }
 
   .animate-on-scroll {
-    @apply transition-all ease-out;
+    @apply transition-all ease-in-out;
   }
   .fade-in {
     @apply opacity-0;
