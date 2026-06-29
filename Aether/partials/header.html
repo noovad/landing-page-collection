@@ -1,7 +1,7 @@
 <header id="header" x-data="{ mobileOpen: false }" class="header header-primary" role="banner">
   <div class="mx-auto max-w-7xl flex items-center justify-between">
-    <a href="#" class="flex items-center gap-2" aria-label="Aether - Home">
-      <span class="text-lg font-medium">Aether</span>
+    <a href="#" class="flex items-center gap-2" aria-label="{{brand.name}} - Home">
+      <span class="text-lg font-medium">{{brand.name}}</span>
     </a>
     <div class="flex items-center">
       <nav
@@ -9,15 +9,15 @@
         class="hidden md:flex items-center gap-8 font-medium transition-all translate-x-32"
         aria-label="Main navigation"
       >
-        <a href="#features" class="hover:text-secondary transition-colors">Product</a>
-        <a href="#pricing" class="hover:text-secondary transition-colors">Pricing</a>
-        <a href="#faq" class="hover:text-secondary transition-colors">FAQ</a>
+        {{#each navigation.items}}
+        <a href="{{href}}" class="hover:text-secondary transition-colors">{{label}}</a>
+        {{/each}}
       </nav>
       <button
         id="headerCta"
         class="btn-accent hidden md:block overflow-hidden transition-all duration-500 translate-x-[50vw] text font-normal! px-4! py-2!"
       >
-        Book a demo
+        {{navigation.cta.label}}
       </button>
       <button
         @click="mobileOpen = !mobileOpen"
@@ -43,11 +43,11 @@
     aria-label="Mobile navigation"
   >
     <nav class="flex flex-col gap-4 font-medium">
-      <a href="#features" @click="mobileOpen = false">Product</a>
-      <a href="#pricing" @click="mobileOpen = false">Pricing</a>
-      <a href="#faq" @click="mobileOpen = false">FAQ</a>
+      {{#each navigation.items}}
+      <a href="{{href}}" @click="mobileOpen = false">{{label}}</a>
+      {{/each}}
       <hr class="border-border" />
-      <a href="#" @click="mobileOpen = false" class="btn-accent text-center w-full">Book a demo</a>
+      <a href="#" @click="mobileOpen = false" class="btn-accent text-center w-full">{{navigation.cta.label}}</a>
     </nav>
   </div>
 </header>

@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import handlebars from "vite-plugin-handlebars";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import fs from "fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -13,6 +14,16 @@ export default defineConfig({
     tailwindcss(),
     handlebars({
       partialDirectory: resolve(__dirname, "partials"),
+      context() {
+        return JSON.parse(
+          fs.readFileSync(resolve(__dirname, "data/content.json"), "utf-8"),
+        );
+      },
+      helpers: {
+        eq(a, b) { return a === b; },
+        add(a, b) { return a + b; },
+        join(arr, sep) { return arr.join(sep); },
+      },
     }),
   ],
 

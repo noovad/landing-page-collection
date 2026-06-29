@@ -1,4 +1,5 @@
 <section
+  id="testimonials"
   data-header="solid"
   class="animate-on-scroll-group py-24 lg:py-32 overflow-hidden"
   aria-labelledby="testimonials-heading"
@@ -6,8 +7,8 @@
   <div class="fade-in max-w-7xl mx-auto px-6 lg:px-10 mb-16">
     <div class="flex items-center justify-between">
       <div>
-        <span class="eyebrow">Testimonials</span>
-        <h2 id="testimonials-heading" class="mt-4 mb-4">Real results from real people</h2>
+        <span class="eyebrow">{{testimonials.eyebrow}}</span>
+        <h2 id="testimonials-heading" class="mt-4 mb-4">{{testimonials.title}}</h2>
       </div>
       <div class="flex gap-2" role="group" aria-label="Testimonial navigation">
         <button
@@ -36,101 +37,30 @@
       aria-roledescription="carousel"
       aria-label="Customer testimonials"
     >
-      <div class="card-testimonial" role="group" aria-roledescription="slide" aria-label="Testimonial 1 of 4">
+      {{#each testimonials.items}}
+      <div class="card-testimonial" role="group" aria-roledescription="slide" aria-label="Testimonial {{add @index 1}} of {{../testimonials.items.length}}">
         <div class="flex items-center gap-4 mb-6">
-          <span class="text-xl font-bold">Vertex1</span>
+          <span class="text-xl font-bold">{{company}}</span>
         </div>
         <blockquote class="text-base leading-relaxed flex-1 mb-6">
-          "Aether has transformed how our entire firm communicates. The ROI on client retention alone makes it worth
-          every penny."
+          "{{quote}}"
         </blockquote>
         <div class="flex items-center gap-4 pt-6 border-t border-border">
           <img
-            src="https://picsum.photos/id/1005/100/100"
-            alt=""
+            src="https://picsum.photos/seed/{{@index}}/100/100"
+            alt="{{author}}"
             class="w-12 h-12 rounded-full object-cover"
             loading="lazy"
             width="48"
             height="48"
           />
           <div>
-            <p class="font-semibold">Sarah Mitchell</p>
-            <p class="text-muted">Senior Partner</p>
+            <p class="font-semibold">{{author}}</p>
+            <p class="text-muted">{{position}}</p>
           </div>
         </div>
       </div>
-
-      <div class="card-testimonial" role="group" aria-roledescription="slide" aria-label="Testimonial 2 of 4">
-        <div class="flex items-center gap-4 mb-6">
-          <span class="text-xl font-bold">Meridian2</span>
-        </div>
-        <blockquote class="text-base leading-relaxed flex-1 mb-6">
-          "I trained using the Aether audio broadcast for my team's conference. Highly recommend this to improve all
-          aspects of your speaking skills."
-        </blockquote>
-        <div class="flex items-center gap-4 pt-6 border-t border-border">
-          <img
-            src="https://picsum.photos/id/1012/100/100"
-            alt=""
-            class="w-12 h-12 rounded-full object-cover"
-            loading="lazy"
-            width="48"
-            height="48"
-          />
-          <div>
-            <p class="font-semibold">James Chen</p>
-            <p class="text-muted">Litigation Attorney</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-testimonial" role="group" aria-roledescription="slide" aria-label="Testimonial 3 of 4">
-        <div class="flex items-center gap-4 mb-6">
-          <span class="text-xl font-bold">Arc3</span>
-        </div>
-        <blockquote class="text-base leading-relaxed flex-1 mb-6">
-          "Aether's coaching helped me deliver my opening statements with confidence. My clients now feel more assured
-          in my representation."
-        </blockquote>
-        <div class="flex items-center gap-4 pt-6 border-t border-border">
-          <img
-            src="https://picsum.photos/id/1027/100/100"
-            alt=""
-            class="w-12 h-12 rounded-full object-cover"
-            loading="lazy"
-            width="48"
-            height="48"
-          />
-          <div>
-            <p class="font-semibold">Maria Rodriguez</p>
-            <p class="text-muted">Public Defender</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-testimonial" role="group" aria-roledescription="slide" aria-label="Testimonial 4 of 4">
-        <div class="flex items-center gap-4 mb-6">
-          <span class="text-xl font-bold">Vertex4</span>
-        </div>
-        <blockquote class="text-base leading-relaxed flex-1 mb-6">
-          "The impact of Aether is incredible. Everyone can tell that I've been training in the New York bar. My closing
-          arguments now command attention and inspire action."
-        </blockquote>
-        <div class="flex items-center gap-4 pt-6 border-t border-border">
-          <img
-            src="https://picsum.photos/id/64/100/100"
-            alt=""
-            class="w-12 h-12 rounded-full object-cover"
-            loading="lazy"
-            width="48"
-            height="48"
-          />
-          <div>
-            <p class="font-semibold">David Thompson</p>
-            <p class="text-muted">Managing Partner</p>
-          </div>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </div>
 </section>

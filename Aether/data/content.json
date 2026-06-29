@@ -1,0 +1,122 @@
+{
+  "brand": {
+    "name": "Aether",
+    "product": "Aether for Sales Teams",
+    "tagline": "Win more deals through better conversations.",
+    "description": "A sales communication platform that helps teams improve every customer conversation—from discovery calls to closing negotiations.",
+    "website": "https://aether.ai",
+    "logo": "/assets/images/logo.svg",
+    "favicon": "/assets/images/favicon.ico"
+  },
+  "seo": {
+    "title": "Aether for Sales Teams | Improve Sales Conversations",
+    "description": "Help your sales team communicate with confidence, build stronger relationships, and close more deals through structured communication coaching.",
+    "keywords": ["sales communication", "sales coaching", "sales training", "presentation skills", "negotiation", "customer communication", "sales enablement"]
+  },
+  "navigation": {
+    "items": [
+      { "label": "Features", "href": "#features" },
+      { "label": "Solutions", "href": "#solutions" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Testimonials", "href": "#testimonials" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "cta": { "label": "Book a demo", "href": "/book-demo" }
+  },
+  "hero": {
+    "eyebrow": "Sales Communication Platform",
+    "title": "Win more deals through better conversations.",
+    "description": "Equip every sales representative with the communication skills needed to build trust, handle objections, and close more business.",
+    "primaryButton": { "label": "Book a demo", "href": "/book-demo" },
+    "secondaryButton": { "label": "View pricing", "href": "#pricing" },
+    "metrics": [
+      { "label": "Confidence", "value": "+34%" },
+      { "label": "Persuasion", "value": "+29%" },
+      { "label": "Closing Rate", "value": "+21%" }
+    ]
+  },
+  "trustedCompanies": {
+    "title": "Trusted by high-performing sales teams and revenue organizations worldwide.",
+    "companies": ["HubSpot", "Salesforce", "Stripe", "Zoom", "Shopify", "Atlassian", "Notion", "Canva"]
+  },
+  "features": {
+    "eyebrow": "Why Aether",
+    "title": "Build stronger customer conversations at every stage.",
+    "description": "Develop communication skills that increase trust, shorten sales cycles, and improve customer relationships.",
+    "items": [
+      { "icon": "message-square", "title": "Discovery Conversations", "description": "Ask better questions, uncover customer needs, and guide meaningful conversations." },
+      { "icon": "users", "title": "Relationship Building", "description": "Create trust and credibility that lead to long-term customer relationships." },
+      { "icon": "handshake", "title": "Objection Handling", "description": "Respond confidently to objections without sounding defensive or scripted." }
+    ]
+  },
+  "impact": {
+    "eyebrow": "Results",
+    "title": "Built for modern sales organizations",
+    "description": "Thousands of professionals use Aether to strengthen communication across the entire sales process.",
+    "stats": [
+      { "value": 2500, "suffix": "+", "label": "sales professionals trained" },
+      { "value": 500000, "suffix": "+", "label": "customer conversations improved" },
+      { "value": 91, "suffix": "%", "label": "reported higher confidence during sales meetings" }
+    ]
+  },
+  "testimonialHighlight": {
+    "quote": "Our sales conversations became more structured and customer-focused. The team now handles objections with greater confidence and consistency.",
+    "author": "Michael Johnson",
+    "position": "VP of Sales",
+    "company": "Growth Labs"
+  },
+  "solutions": {
+    "eyebrow": "Sales Skills",
+    "title": "Communication coaching for every stage of the sales journey",
+    "description": "From prospecting to closing, improve the conversations that drive revenue.",
+    "items": [
+      { "icon": "search", "title": "Discovery Calls", "description": "Learn to ask meaningful questions and uncover customer pain points." },
+      { "icon": "monitor", "title": "Product Demonstrations", "description": "Present solutions clearly and focus on customer value." },
+      { "icon": "check-circle", "title": "Objection Handling", "description": "Address concerns confidently while maintaining trust." },
+      { "icon": "handshake", "title": "Negotiation", "description": "Navigate pricing discussions and negotiations with confidence." },
+      { "icon": "trending-up", "title": "Closing Conversations", "description": "Recognize buying signals and confidently ask for the next commitment." }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Choose the right plan for your team",
+    "description": "Simple pricing for individuals and growing sales organizations.",
+    "plans": [
+      { "name": "Starter", "price": "$49", "period": "/month", "tagline": "For individuals", "billing": "Billed annually", "featured": false, "button": { "label": "Start free trial", "href": "/signup" }, "features": ["Personal coaching", "Conversation reviews", "Weekly progress reports", "Basic analytics"] },
+      { "name": "Professional", "price": "$89", "period": "/month", "tagline": "For growing teams", "billing": "Billed annually", "featured": true, "badge": "Most Popular", "button": { "label": "Get started", "href": "/signup" }, "features": ["Unlimited coaching", "Role-play scenarios", "Advanced analytics", "Performance dashboard", "Priority support"] },
+      { "name": "Enterprise", "price": "Custom", "period": "", "tagline": "For large organizations", "billing": "Flexible pricing for your team", "featured": false, "button": { "label": "Contact sales", "href": "/contact" }, "features": ["Team management", "Organization dashboard", "Manager insights", "Custom onboarding", "Dedicated success manager"] }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Success Stories",
+    "title": "Trusted by revenue teams",
+    "items": [
+      { "company": "CloudPeak", "quote": "Our sales meetings became more structured and our win rate noticeably improved.", "author": "Emily Carter", "position": "Sales Director" },
+      { "company": "NovaCRM", "quote": "New hires ramp faster because everyone follows the same communication framework.", "author": "Daniel Kim", "position": "Revenue Enablement Manager" },
+      { "company": "BrightTech", "quote": "The platform helped us build a more confident and consistent sales organization.", "author": "Sophia Wilson", "position": "Chief Revenue Officer" }
+    ]
+  },
+  "cta": {
+    "title": "Empower every sales conversation.",
+    "description": "Help your team communicate with confidence, build stronger relationships, and close more deals.",
+    "button": { "label": "Book a demo", "href": "/book-demo" }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "Who is Aether for?", "answer": "Aether is designed for SDRs, Account Executives, Sales Managers, Customer Success teams, and Revenue Leaders." },
+      { "question": "Can we use it for onboarding new sales representatives?", "answer": "Yes. Aether helps standardize communication skills and accelerate onboarding." },
+      { "question": "Is it suitable for remote sales teams?", "answer": "Absolutely. Teams can practice and improve communication regardless of location." },
+      { "question": "Can managers track team progress?", "answer": "Yes. Team plans include dashboards, performance insights, and progress tracking." }
+    ]
+  },
+  "footer": {
+    "copyright": "\u00a9 2025 Aether. All rights reserved.",
+    "links": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" },
+      { "label": "Contact", "href": "/contact" }
+    ]
+  }
+}

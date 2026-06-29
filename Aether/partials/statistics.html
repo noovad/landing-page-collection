@@ -5,25 +5,18 @@
 >
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div>
-      <span class="slide-up eyebrow">Impact</span>
-      <h2 id="impact-heading" class="slide-up mt-4 mb-6">For lawyers, by lawyers</h2>
+      <span class="slide-up eyebrow">{{impact.eyebrow}}</span>
+      <h2 id="impact-heading" class="slide-up mt-4 mb-6">{{impact.title}}</h2>
       <p class="slide-up text-lg leading-relaxed mb-10">
-        Aether is designed by legal communication experts and trusted by elite law firms, in-house counsels, and
-        government agencies across the globe.
+        {{impact.description}}
       </p>
       <div class="fade-in flex flex-wrap gap-4">
-        <div class="min-w-[300px] flex-1 p-6 bg-primary text-on-dark" role="listitem">
-          <p class="text-3xl font-medium"><span class="counter" data-target="1000" data-duration="2000"></span>+</p>
-          <p class="mt-2 text-sm text-on-dark-secondary">professionals trained</p>
+        {{#each impact.stats}}
+        <div class="min-w-[300px] flex-1 p-6 {{#if @first}}bg-primary text-on-dark{{else}}{{#if @last}}bg-primary text-on-dark{{else}}bg-secondary/20{{/if}}{{/if}}" role="listitem">
+          <p class="text-3xl font-medium"><span class="counter" data-target="{{value}}" data-duration="2000"></span>{{suffix}}</p>
+          <p class="mt-2 text-sm {{#if @first}}text-on-dark-secondary{{else}}{{#if @last}}text-on-dark-secondary{{else}}text-muted{{/if}}{{/if}}">{{label}}</p>
         </div>
-        <div class="min-w-[300px] flex-1 p-6 bg-secondary/20" role="listitem">
-          <p class="text-3xl font-medium"><span class="counter" data-target="100000" data-duration="3000"></span>+</p>
-          <p class="mt-2 text-sm text-muted">improved interactions</p>
-        </div>
-        <div class="min-w-[300px] flex-1 p-6 bg-primary text-on-dark" role="listitem">
-          <p class="text-3xl font-medium"><span class="counter" data-target="92" data-duration="2000"></span>%</p>
-          <p class="mt-2 text-sm text-on-dark-secondary">of our users are more confident after 6 months</p>
-        </div>
+        {{/each}}
       </div>
     </div>
   </div>

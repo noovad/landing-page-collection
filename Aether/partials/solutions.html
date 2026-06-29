@@ -1,0 +1,35 @@
+<section
+  id="solutions"
+  data-header="primary"
+  class="animate-on-scroll-group py-24 lg:py-32 bg-primary relative"
+  aria-labelledby="solutions-heading"
+>
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-overlay blur-3xl"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="slide-up eyebrow-light">{{solutions.eyebrow}}</span>
+      <h2 id="solutions-heading" class="slide-up mt-4 mb-4 text-on-dark">
+        {{solutions.title}}
+      </h2>
+      <p class="slide-up text-lg leading-relaxed text-on-dark-secondary">
+        {{solutions.description}}
+      </p>
+    </div>
+
+    <div class="flex flex-wrap gap-4">
+      {{#each solutions.items}}
+      <div class="slide-up min-w-[300px] flex-1 group p-6 card-dark" role="listitem">
+        <div class="card-dark-icon" aria-hidden="true">
+          <i data-lucide="{{icon}}" class="w-6 h-6 text-on-dark"></i>
+        </div>
+        <h3 class="card-title text-on-dark mb-2">{{title}}</h3>
+        <p class="card-description text-on-dark-secondary">
+          {{description}}
+        </p>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

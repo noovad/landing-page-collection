@@ -1,19 +1,14 @@
 <section data-header="solid" class="bg-surface py-16 overflow-hidden">
   <div class="animate-on-scroll-group max-w-lg mx-auto px-6 lg:px-10">
     <p class="fade-in text-primary text-center font-medium mb-10">
-      Trusted by elite law firms, in-house counsels, and government agencies across the globe
+      {{trustedCompanies.title}}
     </p>
   </div>
   <div class="overflow-hidden w-full">
     <div id="logoTrack" class="flex gap-6 will-change-transform">
-      <div class="logo-card">Baker McKenzie</div>
-      <div class="logo-card">Allen &amp; Overy</div>
-      <div class="logo-card">Clifford Chance</div>
-      <div class="logo-card">Davis Polk</div>
-      <div class="logo-card">Freshfields</div>
-      <div class="logo-card">Linklaters</div>
-      <div class="logo-card">Skadden</div>
-      <div class="logo-card">Sullivan &amp; Cromwell</div>
+      {{#each trustedCompanies.companies}}
+      <div class="logo-card">{{this}}</div>
+      {{/each}}
     </div>
   </div>
 </section>

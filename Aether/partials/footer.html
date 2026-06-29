@@ -3,55 +3,41 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
       <div class="fade-in">
         <div class="flex items-center gap-2 mb-4">
-          <span class="text-lg font-medium text-on-dark">Aether</span>
+          <span class="text-lg font-medium text-on-dark">{{brand.name}}</span>
         </div>
-        <p class="text-sm text-muted max-w-xs">Your speech coach for high-stakes conversations.</p>
+        <p class="text-sm text-on-dark-muted max-w-xs">{{brand.description}}</p>
       </div>
 
       <nav class="fade-in" aria-label="Product links">
         <h2 class="text-sm font-medium text-on-dark mb-4">Product</h2>
         <ul class="space-y-3">
-          <li><a href="#features" class="text-sm text-on-dark-muted">Features</a></li>
-          <li><a href="#pricing" class="text-sm text-on-dark-muted">Pricing</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Integrations</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Changelog</a></li>
+          {{#each navigation.items}}
+          <li><a href="{{href}}" class="text-sm text-on-dark-muted hover:text-on-dark transition-colors">{{label}}</a></li>
+          {{/each}}
         </ul>
       </nav>
 
-      <nav class="fade-in" aria-label="Company links">
+      <nav class="fade-in" aria-label="Company">
         <h2 class="text-sm font-medium text-on-dark mb-4">Company</h2>
         <ul class="space-y-3">
-          <li><a href="#" class="text-sm text-on-dark-muted">About</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Blog</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Careers</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Contact</a></li>
+          <li><a href="#" class="text-sm text-on-dark-muted hover:text-on-dark transition-colors">About</a></li>
+          <li><a href="#" class="text-sm text-on-dark-muted hover:text-on-dark transition-colors">Blog</a></li>
+          <li><a href="#" class="text-sm text-on-dark-muted hover:text-on-dark transition-colors">Careers</a></li>
         </ul>
       </nav>
 
       <nav class="fade-in" aria-label="Legal links">
         <h2 class="text-sm font-medium text-on-dark mb-4">Legal</h2>
         <ul class="space-y-3">
-          <li><a href="#" class="text-sm text-on-dark-muted">Privacy</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Terms</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Security</a></li>
-          <li><a href="#" class="text-sm text-on-dark-muted">Cookies</a></li>
+          {{#each footer.links}}
+          <li><a href="{{href}}" class="text-sm text-on-dark-muted hover:text-on-dark transition-colors">{{label}}</a></li>
+          {{/each}}
         </ul>
       </nav>
     </div>
 
     <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-white/10">
-      <p class="text-xs text-on-dark-muted opacity-80">&copy; 2025 Aether. All rights reserved.</p>
-      <div class="flex items-center gap-4" role="list" aria-label="Social media links">
-        <a href="#" class="footer-icon" aria-label="Aether on Twitter" role="listitem">
-          <i data-lucide="twitter" class="w-5 h-5"></i>
-        </a>
-        <a href="#" class="footer-icon" aria-label="Aether on GitHub" role="listitem">
-          <i data-lucide="github" class="w-5 h-5"></i>
-        </a>
-        <a href="#" class="footer-icon" aria-label="Aether on LinkedIn" role="listitem">
-          <i data-lucide="linkedin" class="w-5 h-5"></i>
-        </a>
-      </div>
+      <p class="text-xs text-on-dark-muted opacity-80">{{footer.copyright}}</p>
     </div>
   </div>
 </footer>

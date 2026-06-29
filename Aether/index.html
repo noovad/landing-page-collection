@@ -3,33 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aether — AI Communication Coach for Lawyers</title>
-    <meta
-      name="description"
-      content="Aether is an AI-powered communication coach for lawyers. Improve your speaking skills, confidence, and clarity in courtrooms, client meetings, and negotiations."
-    />
+    <title>{{seo.title}}</title>
+    <meta name="description" content="{{seo.description}}" />
+    <meta name="keywords" content="{{join seo.keywords ', '}}" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://aether.com/" />
+    <link rel="canonical" href="{{brand.website}}/" />
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Aether — AI Communication Coach for Lawyers" />
-    <meta
-      property="og:description"
-      content="AI-powered communication coaching for legal professionals. Master vocal dynamics, body language, and persuasive speaking."
-    />
-    <meta property="og:url" content="https://aether.com/" />
-    <meta property="og:site_name" content="Aether" />
-    <meta property="og:image" content="https://picsum.photos/id/1005/1200/630" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:url" content="{{brand.website}}/" />
+    <meta property="og:site_name" content="{{brand.name}}" />
+    <meta property="og:image" content="https://picsum.photos/id/1025/1200/630" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Aether — AI Communication Coach for Lawyers" />
-    <meta
-      name="twitter:description"
-      content="AI-powered communication coaching for legal professionals. Master vocal dynamics, body language, and persuasive speaking."
-    />
-    <meta name="twitter:image" content="https://picsum.photos/id/1005/1200/630" />
+    <meta name="twitter:title" content="{{seo.title}}" />
+    <meta name="twitter:description" content="{{seo.description}}" />
+    <meta name="twitter:image" content="https://picsum.photos/id/1025/1200/630" />
 
     <link rel="stylesheet" href="./css/app.css" />
   </head>
@@ -45,7 +35,7 @@
     {{> header}}
 
     <main id="main-content">
-      {{> hero}} {{> trusted}} {{> features}} {{> statistics}} {{> quote}} {{> benefits}} {{> pricing}} {{>
+      {{> hero}} {{> trusted}} {{> features}} {{> statistics}} {{> quote}} {{> solutions}} {{> pricing}} {{>
       testimonials}} {{> cta}} {{> faq}}
     </main>
 

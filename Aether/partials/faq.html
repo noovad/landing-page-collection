@@ -1,158 +1,34 @@
 <section id="faq" data-header="solid" class="animate-on-scroll-group py-24 lg:py-32" aria-labelledby="faq-heading">
   <div class="max-w-5xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
-      <h2 id="faq-heading" class="fade-in mt-4 mb-4">Frequently asked questions</h2>
+      <h2 id="faq-heading" class="fade-in mt-4 mb-4">{{faq.title}}</h2>
     </div>
 
     <div role="list">
+      {{#each faq.items}}
       <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
         <button
           @click="open = !open"
           class="w-full flex justify-between items-center px-6 py-5 text-left text-base font-medium"
           :aria-expanded="open"
-          aria-controls="faq-1"
+          aria-controls="faq-{{@index}}"
         >
-          <span class="text-lg leading-relaxed">How does Aether keep my data secure?</span>
+          <span class="text-lg leading-relaxed">{{question}}</span>
           <i
             data-lucide="chevron-down"
             class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
             :class="{ 'rotate-180': open }"
           ></i>
         </button>
-        <div id="faq-1" class="faq-collapse" :class="{ 'open': open }" role="region">
+        <div id="faq-{{@index}}" class="faq-collapse" :class="{ 'open': open }" role="region">
           <div>
             <div class="px-6 pb-5 text-muted">
-              Security is our top priority. Aether is SOC 2 Type II certified, uses end-to-end encryption for all data,
-              and supports SSO, SCIM, and granular role-based access controls. We also offer dedicated private cloud
-              deployments for enterprise customers.
+              {{answer}}
             </div>
           </div>
         </div>
       </div>
-
-      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left text-base font-medium"
-          :aria-expanded="open"
-          aria-controls="faq-2"
-        >
-          <span class="text-lg leading-relaxed">Is Aether a software platform or human coaching service?</span>
-          <i
-            data-lucide="chevron-down"
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-          ></i>
-        </button>
-        <div id="faq-2" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted">
-              Aether combines both. Our AI-powered software platform provides personalized coaching, practice sessions,
-              and performance analytics, while our expert coaches are available for one-on-one sessions when you need
-              human guidance.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left text-base font-medium"
-          :aria-expanded="open"
-          aria-controls="faq-3"
-        >
-          <span class="text-lg leading-relaxed">Who should use Aether?</span>
-          <i
-            data-lucide="chevron-down"
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-          ></i>
-        </button>
-        <div id="faq-3" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted">
-              Aether is designed for lawyers, legal professionals, and anyone who wants to improve their communication
-              skills in high-stakes situations. Whether you're a junior associate or a senior partner, our platform
-              adapts to your skill level and goals.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left text-base font-medium"
-          :aria-expanded="open"
-          aria-controls="faq-4"
-        >
-          <span class="text-lg leading-relaxed">What is the subscription term?</span>
-          <i
-            data-lucide="chevron-down"
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-          ></i>
-        </button>
-        <div id="faq-4" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted">
-              We offer both monthly and annual subscription plans. Annual plans come with a 20% discount. You can
-              upgrade or downgrade your plan at any time, and changes take effect at the start of your next billing
-              cycle.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left text-base font-medium"
-          :aria-expanded="open"
-          aria-controls="faq-5"
-        >
-          <span class="text-lg leading-relaxed">Is there a minimum firm size?</span>
-          <i
-            data-lucide="chevron-down"
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-          ></i>
-        </button>
-        <div id="faq-5" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted">
-              No, there's no minimum firm size. Aether is designed for solo practitioners, small firms, and large
-              enterprises alike. Our Starter plan is perfect for individual lawyers, while our Enterprise plan scales to
-              thousands of users.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div x-data="{ open: false }" class="overflow-hidden" role="listitem">
-        <button
-          @click="open = !open"
-          class="w-full flex justify-between items-center px-6 py-5 text-left text-base font-medium"
-          :aria-expanded="open"
-          aria-controls="faq-6"
-        >
-          <span class="text-lg leading-relaxed">How do I cancel a subscription?</span>
-          <i
-            data-lucide="chevron-down"
-            class="w-5 h-5 text-muted transition-transform duration-300 flex-shrink-0 ml-4"
-            :class="{ 'rotate-180': open }"
-          ></i>
-        </button>
-        <div id="faq-6" class="faq-collapse" :class="{ 'open': open }" role="region">
-          <div>
-            <div class="px-6 pb-5 text-muted">
-              You can cancel your subscription at any time from your account settings. There are no cancellation fees,
-              and you'll continue to have access to your plan features until the end of your current billing period.
-            </div>
-          </div>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </div>
 </section>
