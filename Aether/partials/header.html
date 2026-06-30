@@ -1,6 +1,6 @@
 <header id="header" x-data="{ mobileOpen: false }" class="header header-primary" role="banner">
   <div class="mx-auto max-w-7xl flex items-center justify-between">
-    <a href="#" class="flex items-center gap-2" aria-label="{{brand.name}} - Home">
+    <a href="/" class="flex items-center gap-2" aria-label="{{brand.name}} - Home">
       <span class="text-lg font-medium">{{brand.name}}</span>
     </a>
     <div class="flex items-center">
@@ -10,15 +10,16 @@
         aria-label="Main navigation"
       >
         {{#each navigation.items}}
-        <a href="{{href}}" class="hover:text-secondary transition-colors">{{label}}</a>
+        <a href="{{href}}">{{label}}</a>
         {{/each}}
       </nav>
-      <button
+      <a
+        href="{{navigation.cta.href}}"
         id="headerCta"
         class="btn-accent hidden md:block overflow-hidden transition-all duration-500 translate-x-[50vw] text font-normal! px-4! py-2!"
       >
         {{navigation.cta.label}}
-      </button>
+      </a>
       <button
         @click="mobileOpen = !mobileOpen"
         class="md:hidden"

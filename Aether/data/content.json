@@ -11,17 +11,26 @@
   "seo": {
     "title": "Aether for Sales Teams | Improve Sales Conversations",
     "description": "Help your sales team communicate with confidence, build stronger relationships, and close more deals through structured communication coaching.",
-    "keywords": ["sales communication", "sales coaching", "sales training", "presentation skills", "negotiation", "customer communication", "sales enablement"]
+    "keywords": [
+      "sales communication",
+      "sales coaching",
+      "sales training",
+      "presentation skills",
+      "negotiation",
+      "customer communication",
+      "sales enablement"
+    ]
   },
   "navigation": {
     "items": [
-      { "label": "Features", "href": "#features" },
-      { "label": "Solutions", "href": "#solutions" },
-      { "label": "Pricing", "href": "#pricing" },
-      { "label": "Testimonials", "href": "#testimonials" },
-      { "label": "FAQ", "href": "#faq" }
+      { "label": "Features", "href": "/#features" },
+      { "label": "Solutions", "href": "/#solutions" },
+      { "label": "Pricing", "href": "/#pricing" },
+      { "label": "Testimonials", "href": "/#testimonials" },
+      { "label": "FAQ", "href": "/#faq" }
     ],
-    "cta": { "label": "Book a demo", "href": "/book-demo" }
+    "cta": { "label": "Book a demo", "href": "/booking/" },
+    "pricing": { "label": "Pricing", "href": "/#pricing" }
   },
   "hero": {
     "eyebrow": "Sales Communication Platform",
@@ -44,9 +53,21 @@
     "title": "Build stronger customer conversations at every stage.",
     "description": "Develop communication skills that increase trust, shorten sales cycles, and improve customer relationships.",
     "items": [
-      { "icon": "message-square", "title": "Discovery Conversations", "description": "Ask better questions, uncover customer needs, and guide meaningful conversations." },
-      { "icon": "users", "title": "Relationship Building", "description": "Create trust and credibility that lead to long-term customer relationships." },
-      { "icon": "handshake", "title": "Objection Handling", "description": "Respond confidently to objections without sounding defensive or scripted." }
+      {
+        "icon": "message-square",
+        "title": "Discovery Conversations",
+        "description": "Ask better questions, uncover customer needs, and guide meaningful conversations."
+      },
+      {
+        "icon": "users",
+        "title": "Relationship Building",
+        "description": "Create trust and credibility that lead to long-term customer relationships."
+      },
+      {
+        "icon": "handshake",
+        "title": "Objection Handling",
+        "description": "Respond confidently to objections without sounding defensive or scripted."
+      }
     ]
   },
   "impact": {
@@ -70,11 +91,31 @@
     "title": "Communication coaching for every stage of the sales journey",
     "description": "From prospecting to closing, improve the conversations that drive revenue.",
     "items": [
-      { "icon": "search", "title": "Discovery Calls", "description": "Learn to ask meaningful questions and uncover customer pain points." },
-      { "icon": "monitor", "title": "Product Demonstrations", "description": "Present solutions clearly and focus on customer value." },
-      { "icon": "check-circle", "title": "Objection Handling", "description": "Address concerns confidently while maintaining trust." },
-      { "icon": "handshake", "title": "Negotiation", "description": "Navigate pricing discussions and negotiations with confidence." },
-      { "icon": "trending-up", "title": "Closing Conversations", "description": "Recognize buying signals and confidently ask for the next commitment." }
+      {
+        "icon": "search",
+        "title": "Discovery Calls",
+        "description": "Learn to ask meaningful questions and uncover customer pain points."
+      },
+      {
+        "icon": "monitor",
+        "title": "Product Demonstrations",
+        "description": "Present solutions clearly and focus on customer value."
+      },
+      {
+        "icon": "check-circle",
+        "title": "Objection Handling",
+        "description": "Address concerns confidently while maintaining trust."
+      },
+      {
+        "icon": "handshake",
+        "title": "Negotiation",
+        "description": "Navigate pricing discussions and negotiations with confidence."
+      },
+      {
+        "icon": "trending-up",
+        "title": "Closing Conversations",
+        "description": "Recognize buying signals and confidently ask for the next commitment."
+      }
     ]
   },
   "pricing": {
@@ -82,18 +123,73 @@
     "title": "Choose the right plan for your team",
     "description": "Simple pricing for individuals and growing sales organizations.",
     "plans": [
-      { "name": "Starter", "price": "$49", "period": "/month", "tagline": "For individuals", "billing": "Billed annually", "featured": false, "button": { "label": "Start free trial", "href": "/signup" }, "features": ["Personal coaching", "Conversation reviews", "Weekly progress reports", "Basic analytics"] },
-      { "name": "Professional", "price": "$89", "period": "/month", "tagline": "For growing teams", "billing": "Billed annually", "featured": true, "badge": "Most Popular", "button": { "label": "Get started", "href": "/signup" }, "features": ["Unlimited coaching", "Role-play scenarios", "Advanced analytics", "Performance dashboard", "Priority support"] },
-      { "name": "Enterprise", "price": "Custom", "period": "", "tagline": "For large organizations", "billing": "Flexible pricing for your team", "featured": false, "button": { "label": "Contact sales", "href": "/contact" }, "features": ["Team management", "Organization dashboard", "Manager insights", "Custom onboarding", "Dedicated success manager"] }
+      {
+        "name": "Starter",
+        "price": "$49",
+        "period": "/month",
+        "tagline": "For individuals",
+        "billing": "Billed annually",
+        "featured": false,
+        "button": { "label": "Start free trial", "href": "/signup" },
+        "features": ["Personal coaching", "Conversation reviews", "Weekly progress reports", "Basic analytics"]
+      },
+      {
+        "name": "Professional",
+        "price": "$89",
+        "period": "/month",
+        "tagline": "For growing teams",
+        "billing": "Billed annually",
+        "featured": true,
+        "badge": "Most Popular",
+        "button": { "label": "Get started", "href": "/signup" },
+        "features": [
+          "Unlimited coaching",
+          "Role-play scenarios",
+          "Advanced analytics",
+          "Performance dashboard",
+          "Priority support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "tagline": "For large organizations",
+        "billing": "Flexible pricing for your team",
+        "featured": false,
+        "button": { "label": "Contact sales", "href": "/contact" },
+        "features": [
+          "Team management",
+          "Organization dashboard",
+          "Manager insights",
+          "Custom onboarding",
+          "Dedicated success manager"
+        ]
+      }
     ]
   },
   "testimonials": {
     "eyebrow": "Success Stories",
     "title": "Trusted by revenue teams",
     "items": [
-      { "company": "CloudPeak", "quote": "Our sales meetings became more structured and our win rate noticeably improved.", "author": "Emily Carter", "position": "Sales Director" },
-      { "company": "NovaCRM", "quote": "New hires ramp faster because everyone follows the same communication framework.", "author": "Daniel Kim", "position": "Revenue Enablement Manager" },
-      { "company": "BrightTech", "quote": "The platform helped us build a more confident and consistent sales organization.", "author": "Sophia Wilson", "position": "Chief Revenue Officer" }
+      {
+        "company": "CloudPeak",
+        "quote": "Our sales meetings became more structured and our win rate noticeably improved.",
+        "author": "Emily Carter",
+        "position": "Sales Director"
+      },
+      {
+        "company": "NovaCRM",
+        "quote": "New hires ramp faster because everyone follows the same communication framework.",
+        "author": "Daniel Kim",
+        "position": "Revenue Enablement Manager"
+      },
+      {
+        "company": "BrightTech",
+        "quote": "The platform helped us build a more confident and consistent sales organization.",
+        "author": "Sophia Wilson",
+        "position": "Chief Revenue Officer"
+      }
     ]
   },
   "cta": {
@@ -105,10 +201,22 @@
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": [
-      { "question": "Who is Aether for?", "answer": "Aether is designed for SDRs, Account Executives, Sales Managers, Customer Success teams, and Revenue Leaders." },
-      { "question": "Can we use it for onboarding new sales representatives?", "answer": "Yes. Aether helps standardize communication skills and accelerate onboarding." },
-      { "question": "Is it suitable for remote sales teams?", "answer": "Absolutely. Teams can practice and improve communication regardless of location." },
-      { "question": "Can managers track team progress?", "answer": "Yes. Team plans include dashboards, performance insights, and progress tracking." }
+      {
+        "question": "Who is Aether for?",
+        "answer": "Aether is designed for SDRs, Account Executives, Sales Managers, Customer Success teams, and Revenue Leaders."
+      },
+      {
+        "question": "Can we use it for onboarding new sales representatives?",
+        "answer": "Yes. Aether helps standardize communication skills and accelerate onboarding."
+      },
+      {
+        "question": "Is it suitable for remote sales teams?",
+        "answer": "Absolutely. Teams can practice and improve communication regardless of location."
+      },
+      {
+        "question": "Can managers track team progress?",
+        "answer": "Yes. Team plans include dashboards, performance insights, and progress tracking."
+      }
     ]
   },
   "footer": {
@@ -118,5 +226,52 @@
       { "label": "Terms of Service", "href": "/terms" },
       { "label": "Contact", "href": "/contact" }
     ]
+  },
+  "booking": {
+    "eyebrow": "BOOK A 30-MINUTE CALL",
+    "title": "See Aether in action",
+    "benefits": [
+      {
+        "icon": "monitor",
+        "text": "Discuss your team's communication goals and how you can most effectively scale conversation training."
+      },
+      {
+        "icon": "trending-up",
+        "text": "Learn how Aether helps sales professionals improve communication, clarity, and confidence."
+      },
+      { "icon": "calendar", "text": "We suggest a customized plan for your team's size, needs, and practice areas." }
+    ],
+    "duration": 30,
+    "timezone": "Indochina Time",
+    "timezoneAbbr": "ICT",
+    "timeSlots": [
+      "09:00",
+      "09:30",
+      "10:00",
+      "10:30",
+      "11:00",
+      "11:30",
+      "13:00",
+      "13:30",
+      "14:00",
+      "14:30",
+      "15:00",
+      "15:30"
+    ],
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "guests": "Guest email(s)",
+      "guestsHint": "Notify up to 10 additional guests of the scheduled event.",
+      "notes": "Please share anything that will help prepare for our meeting.",
+      "terms": "By proceeding, you confirm that you have read and agree to Aether's",
+      "termsLink": { "label": "Terms and Privacy Notice", "href": "/terms" },
+      "submit": "Schedule Event"
+    },
+    "confirmation": {
+      "title": "You are scheduled!",
+      "description": "A calendar invitation has been sent to your email address.",
+      "conferencing": "Web conferencing details to follow."
+    }
   }
 }

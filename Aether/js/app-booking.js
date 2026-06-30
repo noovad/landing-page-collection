@@ -11,45 +11,46 @@ import "@fontsource/lora/700.css";
 import Alpine from "alpinejs";
 import {
   createIcons,
+  ArrowLeft,
+  Calendar,
   Check,
-  CheckCircle,
-  ChevronDown,
   ChevronLeft,
   ChevronRight,
-  Handshake,
+  Clock,
+  Globe,
   Menu,
-  MessageSquare,
   Monitor,
-  Search,
   TrendingUp,
-  Users,
+  User,
+  Video,
   X,
 } from "lucide";
 
 import { initHeader } from "./header.js";
 import { initAnimations } from "./animation.js";
-import { initCounters } from "./counter.js";
-import { initCarousel } from "./carousel.js";
+import { initBooking } from "./booking-data.js";
 
 initHeader();
 initAnimations();
-initCounters();
-initCarousel();
+
+document.addEventListener("alpine:init", () => {
+  Alpine.data("bookingPage", initBooking);
+});
 
 createIcons({
   icons: {
+    ArrowLeft,
+    Calendar,
     Check,
-    CheckCircle,
-    ChevronDown,
     ChevronLeft,
     ChevronRight,
-    Handshake,
+    Clock,
+    Globe,
     Menu,
-    MessageSquare,
     Monitor,
-    Search,
     TrendingUp,
-    Users,
+    User,
+    Video,
     X,
   },
 });

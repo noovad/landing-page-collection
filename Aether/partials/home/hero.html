@@ -16,13 +16,16 @@
       </p>
       <div class="flex gap-4 justify-center">
         <div class="slide-up duration-700">
-          <button class="btn-accent btn-lg inline-flex items-center gap-2">
+          <a href="{{navigation.cta.href}}" class="btn-accent btn-lg inline-flex items-center gap-2">
             <span>{{hero.primaryButton.label}}</span>
             <i data-lucide="chevron-right" class="h-4 w-4"></i>
-          </button>
+          </a>
         </div>
+
         <div class="slide-up duration-700 delay--200">
-          <button class="btn-outline btn-lg">{{hero.secondaryButton.label}}</button>
+          <a href="{{navigation.pricing.href}}" class="btn-outline btn-lg inline-flex">
+            <span>{{hero.secondaryButton.label}}</span>
+          </a>
         </div>
       </div>
     </div>

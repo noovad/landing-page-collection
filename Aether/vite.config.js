@@ -13,7 +13,11 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     handlebars({
-      partialDirectory: resolve(__dirname, "partials"),
+      partialDirectory: [
+        resolve(__dirname, "partials"),
+        resolve(__dirname, "partials/home"),
+        resolve(__dirname, "partials/booking"),
+      ],
       context() {
         return JSON.parse(
           fs.readFileSync(resolve(__dirname, "data/content.json"), "utf-8"),
@@ -29,5 +33,11 @@ export default defineConfig({
 
   build: {
     cssMinify: true,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        booking: resolve(__dirname, "booking/index.html"),
+      },
+    },
   },
 });

@@ -1,0 +1,43 @@
+<div
+  x-show="step === 'confirmation'"
+  x-transition:enter="transition ease-out duration-200"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  class="p-8 text-center"
+>
+  <div class="w-12 h-12 bg-success-bright/20 rounded-full flex items-center justify-center mx-auto mb-4">
+    <i data-lucide="check" class="w-6 h-6 text-success-bright"></i>
+  </div>
+  <h2 class="text-xl font-medium mb-2" style="font-family: 'Lora', serif;">{{booking.confirmation.title}}</h2>
+  <p class="text-muted text-sm mb-8">{{booking.confirmation.description}}</p>
+
+  <div class="bg-surface rounded-lg p-6 text-left">
+    <h3 class="font-medium mb-4" style="font-family: 'Lora', serif;">{{booking.title}}</h3>
+    <div class="space-y-3 text-sm">
+      <div class="flex items-center gap-3">
+        <i data-lucide="user" class="w-4 h-4 text-muted"></i>
+        <span x-text="formData.name"></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="calendar" class="w-4 h-4 text-muted"></i>
+        <span x-text="selectedDateLabel"></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="clock" class="w-4 h-4 text-muted"></i>
+        <span x-text="selectedTimeLabel"></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="globe" class="w-4 h-4 text-muted"></i>
+        <span>{{booking.timezone}}</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <i data-lucide="video" class="w-4 h-4 text-muted"></i>
+        <span class="text-muted">{{booking.confirmation.conferencing}}</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="/" class="inline-block mt-8 text-sm font-medium text-muted hover:text-text transition-colors">
+    ← Back to home
+  </a>
+</div>
