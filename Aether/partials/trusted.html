@@ -1,13 +1,13 @@
 <section data-header="solid" class="bg-surface py-16 overflow-hidden">
   <div class="animate-on-scroll-group max-w-lg mx-auto px-6 lg:px-10">
-    <p class="fade-in text-primary text-center font-medium mb-10">
-      {{trustedCompanies.title}}
-    </p>
+    <p class="fade-in text-primary text-center font-medium mb-10">{{trustedCompanies.title}}</p>
   </div>
   <div class="overflow-hidden w-full">
     <div id="logoTrack" class="flex gap-6 will-change-transform">
       {{#each trustedCompanies.companies}}
-      <div class="logo-card">{{this}}</div>
+      <div class="logo-card">
+        <span class="font-serif text-xl font-extrabold text-muted"> {{this}} </span>
+      </div>
       {{/each}}
     </div>
   </div>

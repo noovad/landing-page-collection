@@ -1,22 +1,20 @@
 <section data-header="solid" class="animate-on-scroll-group py-24 lg:py-32 bg-surface">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="grid items-stretch gap-8 sm:grid-cols-3">
+    <div class="grid items-stretch gap-8 md:grid-cols-3">
       <div class="slide-right h-full">
         <img
-          src="https://picsum.photos/id/1005/600/750"
-          alt="{{testimonialHighlight.author}} — {{testimonialHighlight.company}}"
-          class="h-full w-full object-cover object-top"
+          src="{{testimonialHighlight.image.src}}"
+          alt="{{testimonialHighlight.image.alt}}"
+          class="aspect-video md:h-full w-full object-cover object-top"
           loading="lazy"
           width="600"
           height="750"
         />
       </div>
 
-      <div class="slide-left h-full sm:col-span-2">
-        <div class="flex h-full flex-col bg-highlight p-8 sm:p-10 lg:p-12">
-          <p class="mb-8 flex-1 text-lg leading-relaxed">
-            "{{testimonialHighlight.quote}}"
-          </p>
+      <div class="slide-left h-full md:col-span-2">
+        <div class="flex h-full flex-col bg-highlight p-8 md:p-10 lg:p-12">
+          <p class="mb-8 flex-1 text-lg leading-relaxed">"{{testimonialHighlight.quote}}"</p>
 
           <div class="border-t border-text/10 pt-6">
             <p class="font-semibold">{{testimonialHighlight.author}}</p>

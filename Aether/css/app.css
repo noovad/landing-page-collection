@@ -28,16 +28,6 @@
     color: var(--color-text);
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Lora", serif;
-    letter-spacing: -0.02em;
-  }
-
   button {
     @apply cursor-pointer;
   }
@@ -94,9 +84,8 @@
     @apply hover:bg-surface;
     @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
   }
-
   .btn-lg {
-    @apply px-10 py-4 text-base;
+    @apply px-5 py-2 md:px-10 md:py-4 text-lg;
   }
 
   .card-dark {
@@ -108,7 +97,7 @@
 
   .card-testimonial {
     @apply bg-white border border-border p-8 shadow-sm flex flex-col;
-    @apply min-w-[400px] w-[600px] shrink-0;
+    @apply min-w-[300px] w-[600px] shrink-0;
   }
 
   .card-pricing {
@@ -169,7 +158,7 @@
     @apply opacity-100 translate-x-0 translate-y-0 scale-100;
   }
   .logo-card {
-    @apply w-1/6 h-20 flex items-center justify-center bg-background shrink-0;
+    @apply w-1/3 md:w-1/6 h-20 flex items-center justify-center shrink-0;
   }
 }
 

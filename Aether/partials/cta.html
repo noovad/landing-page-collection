@@ -1,0 +1,21 @@
+<section id="cta" class="relative overflow-hidden bg-primary py-24 lg:py-32 text-on-dark">
+  <img
+    src="{{cta.image.src}}"
+    alt="{{cta.image.alt}}"
+    aria-hidden="true"
+    class="absolute -right-96 2xl:right-0 bottom-0 h-full w-auto max-w-none origin-bottom-right scale-150"
+  />
+
+  <div class="absolute inset-0 z-10 bg-gradient-to-r from-primary via-primary/20 to-transparent"></div>
+
+  <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-10">
+    <div class="max-w-xl">
+      <h2 class="mb-6">{{cta.title}}</h2>
+      <p class="mb-8 text-lg text-on-dark-secondary">{{cta.description}}</p>
+      <a href="{{navigation.cta.href}}" class="btn-accent btn-lg inline-flex items-center gap-2">
+        <span>{{cta.button.label}}</span>
+        <i data-lucide="chevron-right" class="h-4 w-4"></i>
+      </a>
+    </div>
+  </div>
+</section>

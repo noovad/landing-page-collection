@@ -1,0 +1,60 @@
+<section
+  data-header="primary"
+  data-hero="true"
+  class="animate-on-scroll-group h-[70vh] lg:h-[90vh] relative flex flex-col overflow-hidden bg-primary text-on-dark"
+>
+  <div
+    class="relative z-10 mx-auto flex h-full w-full max-w-7xl flex-1 flex-col justify-between px-6 pt-32 lg:pt-48 lg:px-10"
+  >
+    <div class="max-w-4xl self-center text-center">
+      <h1 class="slide-up duration-700 mb-6">{{hero.title}}</h1>
+      <p class="slide-up duration-1000 text-lg leading-relaxed max-w-2xl mx-auto mb-10 text-on-dark-secondary">
+        {{hero.description}}
+      </p>
+      <div class="flex gap-4 justify-center items-center">
+        <div class="slide-up duration-700">
+          <a href="{{navigation.cta.href}}" class="btn-accent btn-lg inline-flex items-center gap-2">
+            <span>{{hero.primaryButton.label}}</span>
+            <i data-lucide="chevron-right" class="h-4 w-4"></i>
+          </a>
+        </div>
+
+        <div class="slide-up duration-700 delay--200">
+          <a href="{{navigation.pricing.href}}" class="btn-outline btn-lg inline-flex">
+            <span>{{hero.secondaryButton.label}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="{{hero.image.src}}"
+    alt="{{hero.image.alt}}"
+    fetchpriority="high"
+    loading="eager"
+    class="absolute bottom-0 left-1/2 -translate-x-1/2 max-w-6xl z-0"
+  />
+  <div class="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col gap-8 text-text">
+    <div class="self-end translate-x-24 lg:translate-x-38 flex items-center gap-2 rounded-md bg-white px-4 py-2 shadow-lg">
+      <span class="h-2.5 w-2.5 rounded-full bg-success-bright"></span>
+      <span class="text-xs font-medium">{{hero.metrics.[0].label}}</span>
+      <span class="ml-3 text-base font-medium">{{hero.metrics.[0].value}}</span>
+    </div>
+
+    <div class="self-start -translate-x-24 lg:-translate-x-38 flex items-center gap-2 rounded-md bg-white px-4 py-2 shadow-lg">
+      <span class="h-2.5 w-2.5 rounded-full bg-success-bright"></span>
+      <span class="text-xs font-medium">{{hero.metrics.[1].label}}</span>
+      <span class="ml-3 text-base font-medium">{{hero.metrics.[1].value}}</span>
+    </div>
+
+    <div class="self-end translate-x-24 lg:translate-x-38 flex items-center gap-2 rounded-md bg-white px-4 py-2 shadow-lg">
+      <span class="h-2.5 w-2.5 rounded-full bg-success-bright"></span>
+      <span class="text-xs font-medium">{{hero.metrics.[2].label}}</span>
+      <span class="ml-3 text-base font-medium">{{hero.metrics.[2].value}}</span>
+    </div>
+  </div>
+  <div class="absolute inset-0 overflow-hidden z-0">
+    <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-overlay blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-overlay blur-3xl"></div>
+  </div>
+</section>

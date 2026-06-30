@@ -15,7 +15,6 @@ export default defineConfig({
     handlebars({
       partialDirectory: [
         resolve(__dirname, "partials"),
-        resolve(__dirname, "partials/home"),
       ],
       context() {
         return JSON.parse(

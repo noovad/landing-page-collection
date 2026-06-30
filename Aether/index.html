@@ -14,12 +14,12 @@
     <meta property="og:description" content="{{seo.description}}" />
     <meta property="og:url" content="{{brand.website}}/" />
     <meta property="og:site_name" content="{{brand.name}}" />
-    <meta property="og:image" content="https://picsum.photos/id/1025/1200/630" />
+    <meta property="og:image" content="{{seo.ogImage}}" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{seo.title}}" />
     <meta name="twitter:description" content="{{seo.description}}" />
-    <meta name="twitter:image" content="https://picsum.photos/id/1025/1200/630" />
+    <meta name="twitter:image" content="{{seo.ogImage}}" />
 
     <link rel="stylesheet" href="./css/app.css" />
   </head>
@@ -35,8 +35,8 @@
     {{> header}}
 
     <main id="main-content">
-      {{> home/hero}} {{> home/trusted}} {{> home/features}} {{> home/statistics}} {{> home/quote}} {{> home/solutions}} {{> home/pricing}} {{>
-      home/testimonials}} {{> home/cta}} {{> home/faq}}
+      {{> hero}} {{> trusted}} {{> features}} {{> statistics}} {{> quote}} {{> solutions}} {{> pricing}} {{>
+      testimonials}} {{> cta}} {{> faq}}
     </main>
 
     {{> footer}}

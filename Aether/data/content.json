@@ -19,7 +19,8 @@
       "negotiation",
       "customer communication",
       "sales enablement"
-    ]
+    ],
+    "ogImage": "./assets/images/og-image.webp"
   },
   "navigation": {
     "items": [
@@ -38,6 +39,7 @@
     "description": "Equip every sales representative with the communication skills needed to build trust, handle objections, and close more business.",
     "primaryButton": { "label": "Contact us", "href": "#" },
     "secondaryButton": { "label": "View pricing", "href": "#pricing" },
+    "image": { "src": "./assets/images/hero.webp", "alt": "Sales professional presenting to a client" },
     "metrics": [
       { "label": "Confidence", "value": "+34%" },
       { "label": "Persuasion", "value": "+29%" },
@@ -46,12 +48,24 @@
   },
   "trustedCompanies": {
     "title": "Trusted by high-performing sales teams and revenue organizations worldwide.",
-    "companies": ["HubSpot", "Salesforce", "Stripe", "Zoom", "Shopify", "Atlassian", "Notion", "Canva"]
+    "companies": [
+      "NovaTech",
+      "BrightFlow",
+      "CloudPeak",
+      "Vertex",
+      "Pulse AI",
+      "NextCore",
+      "Skyline",
+      "BluePixel",
+      "Northwind",
+      "Acme"
+    ]
   },
   "features": {
     "eyebrow": "Why Aether",
     "title": "Build stronger customer conversations at every stage.",
     "description": "Develop communication skills that increase trust, shorten sales cycles, and improve customer relationships.",
+    "image": { "src": "./assets/images/features.webp", "alt": "Sales representative in a discovery meeting" },
     "items": [
       {
         "icon": "message-square",
@@ -81,10 +95,11 @@
     ]
   },
   "testimonialHighlight": {
-    "quote": "Our sales conversations became more structured and customer-focused. The team now handles objections with greater confidence and consistency.",
+    "quote": "Aether has transformed the quality of our customer conversations. Our sales representatives communicate with greater clarity, uncover customer needs more effectively, and respond to objections with confidence. The result has been stronger relationships, more productive meetings, and a noticeable improvement in overall sales performance.",
     "author": "Michael Johnson",
     "position": "VP of Sales",
-    "company": "Growth Labs"
+    "company": "Growth Labs",
+    "image": { "src": "./assets/images/quote.webp", "alt": "Michael Johnson — Growth Labs" }
   },
   "solutions": {
     "eyebrow": "Sales Skills",
@@ -173,26 +188,30 @@
         "company": "CloudPeak",
         "quote": "Our sales meetings became more structured and our win rate noticeably improved.",
         "author": "Emily Carter",
-        "position": "Sales Director"
+        "position": "Sales Director",
+        "avatar": "./assets/images/avatar-1.webp"
       },
       {
         "company": "NovaCRM",
         "quote": "New hires ramp faster because everyone follows the same communication framework.",
         "author": "Daniel Kim",
-        "position": "Revenue Enablement Manager"
+        "position": "Revenue Enablement Manager",
+        "avatar": "./assets/images/avatar-2.webp"
       },
       {
         "company": "BrightTech",
         "quote": "The platform helped us build a more confident and consistent sales organization.",
         "author": "Sophia Wilson",
-        "position": "Chief Revenue Officer"
+        "position": "Chief Revenue Officer",
+        "avatar": "./assets/images/avatar-3.webp"
       }
     ]
   },
   "cta": {
-    "title": "Empower every sales conversation.",
-    "description": "Help your team communicate with confidence, build stronger relationships, and close more deals.",
-    "button": { "label": "Contact us", "href": "#" }
+    "title": "Ready to transform your team's sales conversations?",
+    "description": "See how Aether can help your sales team build stronger relationships and close more deals.",
+    "button": { "label": "Contact us", "href": "#" },
+    "image": { "src": "./assets/images/cta.webp", "alt": "" }
   },
   "faq": {
     "eyebrow": "FAQ",

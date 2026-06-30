@@ -1,7 +1,7 @@
 <header id="header" x-data="{ mobileOpen: false }" class="header header-primary" role="banner">
   <div class="mx-auto max-w-7xl flex items-center justify-between">
     <a href="/" class="flex items-center gap-2" aria-label="{{brand.name}} - Home">
-      <span class="text-lg font-medium">{{brand.name}}</span>
+      <h4 class="font-bold">{{brand.name}}</h4>
     </a>
     <div class="flex items-center">
       <nav
@@ -43,7 +43,7 @@
     role="navigation"
     aria-label="Mobile navigation"
   >
-    <nav class="flex flex-col gap-4 font-medium">
+    <nav class="flex flex-col gap-4 font-medium text-text">
       {{#each navigation.items}}
       <a href="{{href}}" @click="mobileOpen = false">{{label}}</a>
       {{/each}}

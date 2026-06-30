@@ -53,7 +53,7 @@ function initTestimonialCarousel() {
 
   const original = Array.from(data.children);
   const count = original.length;
-  const gap = 32;
+  const gap = 8;
   let current = 0;
 
   function cardW() {
