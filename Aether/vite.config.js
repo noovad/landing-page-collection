@@ -16,7 +16,6 @@ export default defineConfig({
       partialDirectory: [
         resolve(__dirname, "partials"),
         resolve(__dirname, "partials/home"),
-        resolve(__dirname, "partials/booking"),
       ],
       context() {
         return JSON.parse(
@@ -36,7 +35,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        booking: resolve(__dirname, "booking/index.html"),
       },
     },
   },

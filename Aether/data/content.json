@@ -29,14 +29,14 @@
       { "label": "Testimonials", "href": "/#testimonials" },
       { "label": "FAQ", "href": "/#faq" }
     ],
-    "cta": { "label": "Book a demo", "href": "/booking/" },
+    "cta": { "label": "Contact us", "href": "#" },
     "pricing": { "label": "Pricing", "href": "/#pricing" }
   },
   "hero": {
     "eyebrow": "Sales Communication Platform",
     "title": "Win more deals through better conversations.",
     "description": "Equip every sales representative with the communication skills needed to build trust, handle objections, and close more business.",
-    "primaryButton": { "label": "Book a demo", "href": "/book-demo" },
+    "primaryButton": { "label": "Contact us", "href": "#" },
     "secondaryButton": { "label": "View pricing", "href": "#pricing" },
     "metrics": [
       { "label": "Confidence", "value": "+34%" },
@@ -130,7 +130,6 @@
         "tagline": "For individuals",
         "billing": "Billed annually",
         "featured": false,
-        "button": { "label": "Start free trial", "href": "/signup" },
         "features": ["Personal coaching", "Conversation reviews", "Weekly progress reports", "Basic analytics"]
       },
       {
@@ -141,7 +140,6 @@
         "billing": "Billed annually",
         "featured": true,
         "badge": "Most Popular",
-        "button": { "label": "Get started", "href": "/signup" },
         "features": [
           "Unlimited coaching",
           "Role-play scenarios",
@@ -157,7 +155,6 @@
         "tagline": "For large organizations",
         "billing": "Flexible pricing for your team",
         "featured": false,
-        "button": { "label": "Contact sales", "href": "/contact" },
         "features": [
           "Team management",
           "Organization dashboard",
@@ -195,7 +192,7 @@
   "cta": {
     "title": "Empower every sales conversation.",
     "description": "Help your team communicate with confidence, build stronger relationships, and close more deals.",
-    "button": { "label": "Book a demo", "href": "/book-demo" }
+    "button": { "label": "Contact us", "href": "#" }
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -226,52 +223,5 @@
       { "label": "Terms of Service", "href": "/terms" },
       { "label": "Contact", "href": "/contact" }
     ]
-  },
-  "booking": {
-    "eyebrow": "BOOK A 30-MINUTE CALL",
-    "title": "See Aether in action",
-    "benefits": [
-      {
-        "icon": "monitor",
-        "text": "Discuss your team's communication goals and how you can most effectively scale conversation training."
-      },
-      {
-        "icon": "trending-up",
-        "text": "Learn how Aether helps sales professionals improve communication, clarity, and confidence."
-      },
-      { "icon": "calendar", "text": "We suggest a customized plan for your team's size, needs, and practice areas." }
-    ],
-    "duration": 30,
-    "timezone": "Indochina Time",
-    "timezoneAbbr": "ICT",
-    "timeSlots": [
-      "09:00",
-      "09:30",
-      "10:00",
-      "10:30",
-      "11:00",
-      "11:30",
-      "13:00",
-      "13:30",
-      "14:00",
-      "14:30",
-      "15:00",
-      "15:30"
-    ],
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "guests": "Guest email(s)",
-      "guestsHint": "Notify up to 10 additional guests of the scheduled event.",
-      "notes": "Please share anything that will help prepare for our meeting.",
-      "terms": "By proceeding, you confirm that you have read and agree to Aether's",
-      "termsLink": { "label": "Terms and Privacy Notice", "href": "/terms" },
-      "submit": "Schedule Event"
-    },
-    "confirmation": {
-      "title": "You are scheduled!",
-      "description": "A calendar invitation has been sent to your email address.",
-      "conferencing": "Web conferencing details to follow."
-    }
   }
 }
